@@ -1,13 +1,15 @@
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import {motion} from "framer-motion";
 
-export default function Intro() {
+export default function Greeting() {
+
   const [text, count] = useTypewriter({
     words: ["Hi! I'm Yong", "Welcome to my website!"],
     loop: 1,
     typeSpeed: 100,
     delaySpeed: 2000
   });
+  
   return (
     <motion.div 
     initial={{
