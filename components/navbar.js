@@ -20,9 +20,8 @@ const LinkItem = ({ href, path, children }) => {
 const Navbar = () => {
   const router = useRouter();
   const path = router.pathname;
-  console.log(path);
   return (
-    <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 bg-orange-50 dark:bg-[rgb(36,36,36)] text-slate-800 dark:text-white rounded-xl backdrop-blur-sm">
+    <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 bg-orange-50 dark:bg-[rgb(36,36,36)] text-slate-800 dark:text-white rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-30 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-30">
       <motion.div 
       initial={{
         opacity: 0,
@@ -33,11 +32,14 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className="flex flex-row items-center my-auto">
         <SiCoffeescript className="h-5 w-5 my-3 mr-1 ml-3" />
-        <Link href="/" className="font-bold my-3 mr-3 font-light">
+        <Link href="/" className="font-bold my-3 mr-3">
           Yong Liang
         </Link>
         <LinkItem href="/" path={path} className="font-light">
           About
+        </LinkItem>
+        <LinkItem href="/coursework" path={path} className="font-light">
+          Coursework
         </LinkItem>
         <LinkItem href="/project" path={path} className="font-light">
           Project

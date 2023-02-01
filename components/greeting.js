@@ -19,7 +19,7 @@ export default function Greeting() {
       opacity: 1,
     }}
     transition={{duration: 0.5}}
-    className="h-12 max-w-3xl bg-slate-50 dark:bg-zinc-700 rounded-2xl mx-auto flex backdrop-blur-xl items-center">
+    className="h-12 max-w-3xl bg-slate-50 dark:bg-zinc-700 rounded-2xl mx-auto flex backdrop-filter bg-opacity-30 backdrop-blur-lg items-center dark:backdrop-filter dark:bg-opacity-30 dark:backdrop-blur-lg">
       <h2 className="font-light my-2 mx-auto text-zinc-700 dark:text-white text-lg">
         {text}
         <Cursor cursorColor="#F7AB0A" />
