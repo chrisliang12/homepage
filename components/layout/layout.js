@@ -16,7 +16,7 @@ const Layout = ({ children, router }) => {
 
       <Navbar />
       <div className="max-w-3xl mx-auto px-8 pb-3">
-        <Rig />
+        {/* <Rig /> */}
 
         <main>{children}</main>
       </div>

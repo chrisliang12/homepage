@@ -10,7 +10,7 @@ const LinkItem = ({ href, path, children }) => {
   return (
     <Link
     href={href}
-    className={active? "bg-purple-300 p-2 m-1 rounded-sm hover:underline underline-offset-4 text-stone-800" : "bg-transparent p-1 m-2 rounded-sm hover:underline underline-offset-4" }
+    className={active? "bg-purple-300 p-2 m-2 rounded-lg hover:underline underline-offset-4 text-stone-800" : "hover:bg-sky-100 p-2 m-2 rounded-lg hover:underline underline-offset-4 hover:bg-opacity-20 hover:text-purple-300 " }
     >
       {children}
     </Link>
@@ -31,21 +31,18 @@ const Navbar = () => {
       }}
       transition={{ duration: 0.5 }}
       className="flex flex-row items-center my-auto">
-        <SiCoffeescript className="h-5 w-5 my-3 mr-1 ml-3" />
-        <Link href="/" className="font-bold my-3 mr-3">
+        <SiCoffeescript className="h-5 w-5 my-2 mr-1 ml-3" />
+        <Link href="/" className="font-bold my-2 mr-3">
           Yong Liang
         </Link>
         <LinkItem href="/" path={path} className="font-light">
           About
         </LinkItem>
-        <LinkItem href="/coursework" path={path} className="font-light">
-          Coursework
-        </LinkItem>
         <LinkItem href="/project" path={path} className="font-light">
           Project
         </LinkItem>
-        <LinkItem href="/contact" path={path} className="font-light">
-          Contact
+        <LinkItem href="/coursework" path={path} className="font-light">
+          Coursework
         </LinkItem>
       </motion.div>
 

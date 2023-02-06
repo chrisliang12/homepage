@@ -4,7 +4,7 @@ import {motion} from "framer-motion";
 export default function Greeting() {
 
   const [text, count] = useTypewriter({
-    words: ["Hi! I'm Yong", "Welcome to my website!"],
+    words: ["Hi!", "Welcome to my homepage!"],
     loop: 1,
     typeSpeed: 100,
     delaySpeed: 2000

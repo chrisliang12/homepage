@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { BsGithub, BsLinkedin, BsYoutube } from "react-icons/bs";
 import { SiBilibili } from "react-icons/si";
+import {MdEmail} from "react-icons/md";
 import Greeting from "../components/greeting";
 
 export default function Home() {
@@ -39,7 +40,7 @@ export default function Home() {
           />
         </div>
         <div className="md:col-start-3 md:col-end-8 text-left md:text-right">
-          <h2 className="py-2 text-3xl md:text-5xl antialiased hover:subpixel-antialiased headings tracking-widest">
+          <h2 className="py-2 text-3xl md:text-5xl headings tracking-widest">
             Yong Liang
           </h2>
           <p className="headings text-normal md:text-lg tracking-wider">
@@ -47,7 +48,7 @@ export default function Home() {
             <Link className="hover:text-purple-300" href="https://ucsd.edu/">
               @UCSD
             </Link>{" "}
-            / Coffee & Guitar Ethusiast
+            / Coffee & Guitar Enthusiast
           </p>
         </div>
       </motion.div>
@@ -95,7 +96,7 @@ export default function Home() {
         </p>
       </motion.div>
 
-      {/* bio */}
+      {/* on the web */}
       <motion.div
         initial={{
           opacity: 0,
@@ -117,42 +118,70 @@ export default function Home() {
         <p className="text-base my-4">
           <Link
             href="https://github.com/chrisliang12"
-            className="p-2 text-sky-300 rounded-md hover:bg-opacity-20 hover:text-sky-600 hover:bg-sky-100 hover:underline hover:underline-offset-4"
+            className="p-2 rounded-md hover:bg-opacity-20 hover:text-purple-300 hover:bg-sky-100 hover:underline hover:underline-offset-4"
           >
-            <BsGithub className="text-sky-300 inline-block mr-3" />
+            <BsGithub className="inline-block mr-2" />
             @chrisliang12
           </Link>
         </p>
         <p className="text-base my-4">
           <Link
-            href="https://www.linkedin.com/in/yoliang/"
-            className="p-2 text-sky-300 rounded-md hover:bg-opacity-20 hover:text-sky-600 hover:bg-sky-100 hover:underline hover:underline-offset-4"
-          >
-            <BsLinkedin className="text-sky-300 inline-block mr-3" />
-            @yoliang
-          </Link>
-        </p>
-        <p className="text-base my-4">
-          <Link
             href="https://space.bilibili.com/14674557"
-            className="p-2 text-sky-300 rounded-md hover:bg-opacity-20 hover:text-sky-600 hover:bg-sky-100 hover:underline hover:underline-offset-4"
+            className="p-2 rounded-md hover:bg-opacity-20 hover:text-purple-300 hover:bg-sky-100 hover:underline hover:underline-offset-4"
           >
-            <SiBilibili className="text-sky-300 inline-block mr-3" />
+            <SiBilibili className="inline-block mr-2" />
             @Lestrade_ (Chinese)
           </Link>
         </p>
         <p className="text-base my-4">
           <Link
             href="https://github.com/chrisliang12"
-            className="p-2 text-sky-300 rounded-md hover:bg-opacity-20 hover:text-sky-600 hover:bg-sky-100 hover:underline hover:underline-offset-4"
+            className="p-2 rounded-md hover:bg-opacity-20 hover:text-purple-300 hover:bg-sky-100 hover:underline hover:underline-offset-4"
           >
-            <BsYoutube className="text-sky-300 inline-block mr-3" />
+            <BsYoutube className="inline-block mr-2" />
             @Lestrade_ (English)
           </Link>
         </p>
       </motion.div>
 
-      {/* footer */}
+      {/* Contact*/}
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 50,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 0.5,
+          ease: "easeInOut",
+          delay: 0.4,
+        }}
+      >
+        <h3 className="text-2xl underline underline-offset-8 decoration-purple-300 decoration-4">
+          Contact
+        </h3>
+        <p className="text-base my-4">
+          <Link
+            href="mailto:yoliang@ucsd.edu"
+            className="p-2 rounded-md hover:bg-opacity-20 hover:text-purple-300 hover:bg-sky-100 hover:underline hover:underline-offset-4"
+          >
+            <MdEmail className="inline-block mr-2" />
+            yoliang@ucsd.edu
+          </Link>
+        </p>
+        <p className="text-base my-4">
+          <Link
+            href="https://www.linkedin.com/in/yoliang/"
+            className="p-2 rounded-md hover:bg-opacity-20 hover:text-purple-300 hover:bg-sky-100 hover:underline hover:underline-offset-4"
+          >
+            <BsLinkedin className="inline-block mr-2" />
+            @yoliang
+          </Link>
+        </p>
+      </motion.div>
     </div>
   );
 }

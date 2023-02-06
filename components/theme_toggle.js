@@ -27,9 +27,9 @@ export default function ThemeToggle() {
             initial={{ y: 25, opacity: 0 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
             exit={{ y: 25, opacity: 0, scale: 0 }}
-            className="flex flex-row items-center m-3"
+            className="flex flex-row items-center m-2"
           >
-            <SunIcon className="w-8 h-8 p-1 bg-orange-300 rounded-lg" />
+            <SunIcon className="w-9 h-9 p-1 bg-orange-300 rounded-lg" />
           </motion.div>
         ) : (
           <motion.div
@@ -37,9 +37,9 @@ export default function ThemeToggle() {
             initial={{ y: 25, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 25, opacity: 0 }}
-            className="flex flex-row items-center m-3"
+            className="flex flex-row items-center m-2"
           >
-            <MoonIcon className="w-8 h-8 p-1 bg-purple-400 rounded-lg" />
+            <MoonIcon className="w-9 h-9 p-1 bg-purple-400 rounded-lg" />
           </motion.div>
         )}
       </motion.button>
