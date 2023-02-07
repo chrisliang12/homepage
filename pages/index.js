@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { BsGithub, BsLinkedin, BsYoutube } from "react-icons/bs";
 import { SiBilibili } from "react-icons/si";
-import {MdEmail} from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import Greeting from "../components/greeting";
 
 export default function Home() {
@@ -68,7 +68,7 @@ export default function Home() {
           delay: 0.2,
         }}
       >
-        <h3 className="text-3xl underline underline-offset-8 decoration-purple-300 decoration-4">
+        <h3 className="text-2xl underline underline-offset-8 decoration-purple-300 decoration-4">
           About
         </h3>
         <p className="text-base my-4 indent-4 break-words text-justify">
@@ -76,9 +76,12 @@ export default function Home() {
           San Diego. I have a strong passion for developing cool digital stuff
           and solving real-world problems with code. That’s why I am seeking
           opportunities to work in the software industry and I am especially
-          interested in the networked system and related technology. Besides the
-          work, I’m a music enthusiast and also a 10 YOE guitar player. I
-          publish my cover or arrangement on{" "}
+          interested in the networked system and general software development.
+          If you are interested, feel free to check out my{" "}
+          <Link className="text-sky-300 after:content-['_↗']" href="/project">
+            Portfolio
+          </Link>. Besides the work, I’m a music enthusiast and also a 10 YOE
+          guitar player. I publish my cover or arrangement on{" "}
           <Link
             href="https://space.bilibili.com/14674557"
             className="text-sky-300 after:content-['_↗']"
@@ -92,7 +95,7 @@ export default function Home() {
           >
             Youtube
           </Link>
-          . Feel free to check them out.
+          (newly opened channel). Feel free to check them out.
         </p>
       </motion.div>
 
@@ -113,7 +116,7 @@ export default function Home() {
         }}
       >
         <h3 className="text-2xl underline underline-offset-8 decoration-purple-300 decoration-4">
-          On the web
+          Social Media
         </h3>
         <p className="text-base my-4">
           <Link

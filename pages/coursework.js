@@ -21,7 +21,7 @@ export default function Coursework() {
         }}
         exit={{ y: 25, opacity: 0 }}
       >
-        <h2 className="text-xl underline underline-offset-8 decoration-purple-300 decoration-4">
+        <h2 className="text-2xl underline underline-offset-8 decoration-purple-300 decoration-4">
           Computer Science and Engineering
         </h2>
         <table className="table-auto mt-4">
@@ -62,7 +62,7 @@ export default function Coursework() {
         </table>
       </motion.div>
 
-      <motion.div
+      <motion.hr
         initial={{
           opacity: 0,
           y: 50,
@@ -77,35 +77,8 @@ export default function Coursework() {
           delay: 0.2,
         }}
         exit={{ y: 25, opacity: 0 }}
-      >
-        <h2 className="text-xl underline underline-offset-8 decoration-purple-300 decoration-4 mt-4">
-          Dynamic System and Control
-        </h2>
-        <table className="table-auto mt-4">
-          <tbody>
-            <tr>
-              <td className="w-20 text-justify">MAE 204</td>
-              <td>Robotics</td>
-            </tr>
-            <tr>
-              <td className="w-20 text-justify">MAE 208</td>
-              <td>Mathematics for Engineers</td>
-            </tr>
-            <tr>
-              <td className="w-20 text-justify justif">MAE 207</td>
-              <td>Safety for Autonomouse System</td>
-            </tr>
-            <tr>
-              <td className="w-20 text-justify justif">MAE 242</td>
-              <td>Robot Motion Planning</td>
-            </tr>
-            <tr>
-              <td className="w-20 text-justify justif">MAE 280</td>
-              <td>Linear System Theory</td>
-            </tr>
-          </tbody>
-        </table>
-      </motion.div>
+        className="h-px mt-8 bg-gray-200 border-0 dark:bg-stone-700"
+      ></motion.hr>
 
       <motion.div
         initial={{
@@ -123,8 +96,71 @@ export default function Coursework() {
         }}
         exit={{ y: 25, opacity: 0 }}
       >
-        <p className="mt-8 text-purple-300 underline underline-offset-4 decoration-purple-300">
-          Total GPA: 3.8 / 4.0
+        <h2 className="text-2xl underline underline-offset-8 decoration-purple-300 decoration-4 mt-4">
+          Dynamic System and Control
+        </h2>
+        <table className="table-auto mt-4">
+          <tbody>
+            <tr>
+              <td className="w-20 text-justify">MAE 204</td>
+              <td>Robotics</td>
+            </tr>
+            <tr>
+              <td className="w-20 text-justify justif">MAE 207</td>
+              <td>Safety for Autonomouse System</td>
+            </tr>
+            <tr>
+              <td className="w-20 text-justify">MAE 208</td>
+              <td>Mathematics for Engineers</td>
+            </tr>
+            <tr>
+              <td className="w-20 text-justify justif">MAE 242</td>
+              <td>Robot Motion Planning</td>
+            </tr>
+            <tr>
+              <td className="w-20 text-justify justif">MAE 280</td>
+              <td>Linear System Theory</td>
+            </tr>
+          </tbody>
+        </table>
+      </motion.div>
+
+      <motion.hr
+        initial={{
+          opacity: 0,
+          y: 50,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 0.5,
+          ease: "easeInOut",
+          delay: 0.4,
+        }}
+        exit={{ y: 25, opacity: 0 }}
+        className="h-px mt-8 bg-gray-200 border-0 dark:bg-stone-700"
+      ></motion.hr>
+
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 50,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 0.5,
+          ease: "easeInOut",
+          delay: 0.5,
+        }}
+        exit={{ y: 25, opacity: 0 }}
+      >
+        <p className="mt-4 text-purple-300 underline underline-offset-4 decoration-purple-300">
+          Total GPA: 3.81 / 4.00
         </p>
       </motion.div>
     </div>
