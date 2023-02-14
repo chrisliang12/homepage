@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Title from "../components/Title";
+
 
 export default function Coursework() {
   return (
@@ -21,9 +23,9 @@ export default function Coursework() {
         }}
         exit={{ y: 25, opacity: 0 }}
       >
-        <h2 className="text-2xl underline underline-offset-8 decoration-purple-300 decoration-4">
+        <Title>
           Computer Science and Engineering
-        </h2>
+        </Title>
         <table className="table-auto mt-4">
           <tbody>
             <tr>
@@ -96,9 +98,9 @@ export default function Coursework() {
         }}
         exit={{ y: 25, opacity: 0 }}
       >
-        <h2 className="text-2xl underline underline-offset-8 decoration-purple-300 decoration-4 mt-4">
+        <Title>
           Dynamic System and Control
-        </h2>
+        </Title>
         <table className="table-auto mt-4">
           <tbody>
             <tr>

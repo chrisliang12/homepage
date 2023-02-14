@@ -38,8 +38,8 @@ const Navbar = () => {
         <LinkItem href="/" path={path} className="font-light">
           About
         </LinkItem>
-        <LinkItem href="/project" path={path} className="font-light">
-          Project
+        <LinkItem href="/work" path={path} className="font-light">
+          Work
         </LinkItem>
         <LinkItem href="/coursework" path={path} className="font-light">
           Coursework

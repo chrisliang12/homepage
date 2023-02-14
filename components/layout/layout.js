@@ -4,7 +4,7 @@ import Footer from "../footer";
 import Rig from "../rig";
 import React, { Suspense } from "react";
 
-const Layout = ({ children, router }) => {
+const Layout = ({ children }) => {
   return (
     <div className="bg-orange-50 dark:bg-[rgb(36,36,36)] text-white min-h-screen">
       <Head>
@@ -16,7 +16,7 @@ const Layout = ({ children, router }) => {
 
       <Navbar />
       <div className="max-w-3xl mx-auto px-8 pb-3">
-        {/* <Rig /> */}
+        <Rig />
 
         <main>{children}</main>
       </div>
