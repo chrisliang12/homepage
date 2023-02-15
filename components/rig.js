@@ -12,7 +12,7 @@ const Rig = () => {
   const refContainer = useRef();
   const [loading, setLoading] = useState(true);
   const refRenderer = useRef();
-  const urlDogGLB = "http://127.0.0.1:5555/public/Satoru.glb";
+  const urlDogGLB = "http://127.0.0.1:5500/public/Satoru.glb";
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer;
