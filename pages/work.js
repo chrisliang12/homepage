@@ -6,21 +6,22 @@ import Title from "@/components/title";
 export default function Project() {
   return (
     <div>
-      <Title delay={0.1}>
-        Project
-      </Title>
+      <Title delay={0.1}>Project</Title>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
         <ProjectItem
+          link="/works/homepage"
           imgSrc="/../public/pathfinding/page.png"
           delay={0.2}
         >
           <h2 className="text-center mt-4 text-xl font-bold">Homepage</h2>
           <p className="text-center">
-            My personal homepage built with React, Next.js, Tailwind CSS, Framer Motion and Three.js
+            My personal homepage built with React, Next.js, Tailwind CSS, Framer
+            Motion and Three.js
           </p>
         </ProjectItem>
 
         <ProjectItem
+          link="/works/transmission"
           imgSrc="/../public/SWP/swp.png"
           delay={0.2}
         >
@@ -35,6 +36,7 @@ export default function Project() {
         </ProjectItem>
 
         <ProjectItem
+          link="/works/nachos"
           imgSrc="/../public/nachos/nachos.jpg"
           delay={0.3}
         >
@@ -45,6 +47,7 @@ export default function Project() {
         </ProjectItem>
 
         <ProjectItem
+          link="/works/surfstore"
           imgSrc="/../public/surfstore/Architect.png"
           delay={0.3}
         >
@@ -55,6 +58,7 @@ export default function Project() {
         </ProjectItem>
 
         <ProjectItem
+          link="/works/Visualizer"
           imgSrc="/../public/pathfinding/page.png"
           delay={0.4}
         >
@@ -67,6 +71,7 @@ export default function Project() {
         </ProjectItem>
 
         <ProjectItem
+          link="/works/rl"
           imgSrc="/../public/mountain-car/mcar.png"
           delay={0.4}
         >
@@ -74,11 +79,13 @@ export default function Project() {
             Mountain Car Challenge
           </h2>
           <p className="text-center">
-            Implementation of several RL algorithms to solve the mountain car (continuous) challenge
+            Implementation of several RL algorithms to solve the mountain car
+            (continuous) challenge
           </p>
         </ProjectItem>
 
         <ProjectItem
+          link="/works/youBot"
           imgSrc="/../public/youBot/youBot.png"
           delay={0.5}
         >

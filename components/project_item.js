@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/Link";
 
-const ProjectItem = ({ children, imgSrc, delay }) => {
+const ProjectItem = ({ children, imgSrc, delay, link }) => {
   return (
     <motion.div
       initial={{
@@ -19,17 +20,19 @@ const ProjectItem = ({ children, imgSrc, delay }) => {
       }}
       exit={{ y: 25, opacity: 0 }}
     >
-      <div className="relative w-full aspect-video">
-        <Image
-          src={imgSrc}
-          alt="image"
-          fill
-          className="mx-auto rounded-2xl"
-        />
-      </div>
-      {children}
+      <Link href={link}>
+        <div className="relative w-full aspect-video">
+          <Image
+            src={imgSrc}
+            alt="image"
+            fill
+            className="mx-auto rounded-2xl"
+          />
+        </div>
+        {children}
+      </Link>
     </motion.div>
-  )
-}
+  );
+};
 
-export default ProjectItem
+export default ProjectItem;

@@ -11,12 +11,16 @@ const LinkItem = ({ href, path, children }) => {
   return (
     <Link
       href={href}
-      className={active ? "hidden md:block bg-purple-300 p-2 m-2 rounded-lg hover:underline underline-offset-4 text-stone-800" : "hover:bg-sky-100 p-2 m-2 rounded-lg hover:underline underline-offset-4 hover:bg-opacity-20 hover:text-purple-300 hidden md:block"}
+      className={
+        active
+          ? "hidden md:block bg-purple-300 p-2 m-2 rounded-lg hover:underline underline-offset-4 text-stone-800"
+          : "hover:bg-sky-100 p-2 m-2 rounded-lg hover:underline underline-offset-4 hover:bg-opacity-20 hover:text-purple-300 hidden md:block"
+      }
     >
       {children}
     </Link>
-  )
-}
+  );
+};
 
 const Navbar = () => {
   const router = useRouter();
@@ -41,7 +45,7 @@ const Navbar = () => {
           About
         </LinkItem>
         <LinkItem href="/work" path={path} className="font-light">
-          Work
+          Portfolio
         </LinkItem>
         <LinkItem href="/coursework" path={path} className="font-light">
           Coursework
@@ -60,18 +64,28 @@ const Navbar = () => {
               exit={{ y: 25, opacity: 0, scale: 0 }}
               className="flex flex-row items-center"
             >
-              <HiMenuAlt2 tabindex="0" className="w-9 h-9 m-2 p-1 text-purple-300 rounded-lg border border-purple-300 focus:text-white" />
+              <HiMenuAlt2
+                tabindex="0"
+                className="w-9 h-9 m-2 p-1 text-purple-300 rounded-lg border border-purple-300 focus:text-white"
+              />
             </motion.div>
-            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-              <li><Link href="/">About</Link></li>
-              <li><Link href="/work">Portfolio</Link></li>
-              <li><Link href="/coursework">Coursework</Link></li>
+            <ul
+              tabindex="0"
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <Link href="/">About</Link>
+              </li>
+              <li>
+                <Link href="/work">Portfolio</Link>
+              </li>
+              <li>
+                <Link href="/coursework">Coursework</Link>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-
-
     </header>
   );
 };
