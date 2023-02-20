@@ -171,8 +171,10 @@ const Proj_Transmission = () => {
         <Subtitle>Demo</Subtitle>
         <div class="mockup-code">
           <pre>
-            # initialize the program with 10 senders and 10 receivers with an
-            0.6 corruption rate.
+            <code>
+              # initialize the program with 10 senders and 10 receivers with an
+              0.6 corruption rate.
+            </code>
           </pre>
           <pre data-prefix=">" className="text-success">
             <code>./tritontalk -s 10 -r 10 -c 0.6</code>

@@ -2,7 +2,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Title from "../components/title";
 
-
 export default function Coursework() {
   return (
     <div>
@@ -23,9 +22,7 @@ export default function Coursework() {
         }}
         exit={{ y: 25, opacity: 0 }}
       >
-        <Title>
-          Computer Science and Engineering
-        </Title>
+        <Title>Computer Science and Engineering</Title>
         <table className="table-auto mt-4">
           <tbody>
             <tr>
@@ -54,17 +51,17 @@ export default function Coursework() {
             </tr>
             <tr>
               <td className="w-20 text-justify justif">CSE 224</td>
-              <td>Graduate Networked Systems</td>
+              <td>Networked Systems</td>
             </tr>
             <tr>
               <td className="w-20 text-justify justif">CSE 232</td>
-              <td>Graduate Database Systems</td>
+              <td>Database Systems</td>
             </tr>
           </tbody>
         </table>
       </motion.div>
 
-      <motion.hr
+      <motion.div
         initial={{
           opacity: 0,
           y: 50,
@@ -79,8 +76,8 @@ export default function Coursework() {
           delay: 0.2,
         }}
         exit={{ y: 25, opacity: 0 }}
-        className="h-px mt-8 bg-gray-200 border-0 dark:bg-stone-700"
-      ></motion.hr>
+        className="divider"
+      ></motion.div>
 
       <motion.div
         initial={{
@@ -98,9 +95,7 @@ export default function Coursework() {
         }}
         exit={{ y: 25, opacity: 0 }}
       >
-        <Title>
-          Dynamic System and Control
-        </Title>
+        <Title>Dynamic System and Control</Title>
         <table className="table-auto mt-4">
           <tbody>
             <tr>
@@ -127,7 +122,7 @@ export default function Coursework() {
         </table>
       </motion.div>
 
-      <motion.hr
+      <motion.div
         initial={{
           opacity: 0,
           y: 50,
@@ -142,8 +137,8 @@ export default function Coursework() {
           delay: 0.4,
         }}
         exit={{ y: 25, opacity: 0 }}
-        className="h-px mt-8 bg-gray-200 border-0 dark:bg-stone-700"
-      ></motion.hr>
+        className="divider"
+      ></motion.div>
 
       <motion.div
         initial={{

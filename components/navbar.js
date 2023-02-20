@@ -56,7 +56,7 @@ const Navbar = () => {
         <ThemeToggle />
 
         <div className="md:hidden">
-          <div class="dropdown dropdown-end">
+          <div className="dropdown dropdown-end">
             <motion.div
               key="light"
               initial={{ y: 25, opacity: 0 }}
@@ -71,7 +71,7 @@ const Navbar = () => {
             </motion.div>
             <ul
               tabindex="0"
-              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
                 <Link href="/">About</Link>

@@ -37,7 +37,7 @@ export default function Home() {
             width={100}
             height={100}
             alt="Avatar"
-            className="rounded-full border-zinc-500 border-4 w-24 md:w-36"
+            className="rounded-full border-purple-300 border-4 w-24 md:w-36"
           />
         </div>
         <div className="md:col-start-3 md:col-end-8 text-left md:text-right">
@@ -69,9 +69,7 @@ export default function Home() {
           delay: 0.2,
         }}
       >
-        <Title>
-          About
-        </Title>
+        <Title>About</Title>
         <p className="text-base my-4 indent-4 break-words text-justify">
           Hi, I’m Yong! I’m currently a second-year Master&apos;s student at UC
           San Diego. I have a strong passion for developing cool digital stuff
@@ -81,8 +79,9 @@ export default function Home() {
           If you are interested, feel free to check out my{" "}
           <Link className="text-sky-300 after:content-['_↗']" href="/work">
             Portfolio
-          </Link>. Besides the work, I’m a music enthusiast and also a 10 YOE
-          guitar player. I publish my cover or arrangement on{" "}
+          </Link>
+          . Besides the work, I’m a music enthusiast and also a 10 YOE guitar
+          player. I publish my cover or arrangement on{" "}
           <Link
             href="https://space.bilibili.com/14674557"
             className="text-sky-300 after:content-['_↗']"
@@ -116,9 +115,7 @@ export default function Home() {
           delay: 0.3,
         }}
       >
-        <Title>
-          Social Media
-        </Title>
+        <Title>Social Media</Title>
         <p className="text-base my-4">
           <Link
             href="https://github.com/chrisliang12"
@@ -164,9 +161,7 @@ export default function Home() {
           delay: 0.4,
         }}
       >
-        <Title>
-          Contact
-        </Title>
+        <Title>Contact</Title>
         <p className="text-base my-4">
           <Link
             href="mailto:yoliang@ucsd.edu"
