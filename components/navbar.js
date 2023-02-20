@@ -65,12 +65,12 @@ const Navbar = () => {
               className="flex flex-row items-center"
             >
               <HiMenuAlt2
-                tabindex="0"
+                tabIndex="0"
                 className="w-9 h-9 m-2 p-1 text-purple-300 rounded-lg border border-purple-300 focus:text-white"
               />
             </motion.div>
             <ul
-              tabindex="0"
+              tabIndex="0"
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>

@@ -15,9 +15,33 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui")],
   daisyui: {
-    themes: ["dark"],
+    themes: [
+      "dark",
+      {
+        customLight: {
+          primary: "#e8ab76",
+
+          secondary: "#db9d6b",
+
+          accent: "#c614c9",
+
+          neutral: "#131B20",
+
+          "base-100": "#E8E8E8",
+
+          info: "#3E67EF",
+
+          success: "#2EB893",
+
+          warning: "#F5A329",
+
+          error: "#F5517A",
+        },
+      },
+    ],
   },
+
+  plugins: [require("daisyui")],
   darkMode: "class",
 };
