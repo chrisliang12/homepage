@@ -37,16 +37,16 @@ export default function Home() {
             width={100}
             height={100}
             alt="Avatar"
-            className="rounded-full border-purple-300 border-4 w-24 md:w-36"
+            className="rounded-full border-primary border-4 w-24 md:w-36"
           />
         </div>
         <div className="md:col-start-3 md:col-end-8 text-left md:text-right">
           <h2 className="py-2 text-3xl md:text-5xl headings tracking-widest">
             Yong Liang
           </h2>
-          <p className="headings text-normal md:text-lg tracking-wider text-stone-400">
+          <p className="headings text-normal md:text-lg tracking-wider">
             M.S. Student{" "}
-            <Link className="hover:text-purple-300" href="https://ucsd.edu/">
+            <Link className="hover:text-secondary" href="https://ucsd.edu/">
               @UCSD
             </Link>{" "}
             / Coffee & Guitar Enthusiast
@@ -77,21 +77,21 @@ export default function Home() {
           opportunities to work in the software industry and I am especially
           interested in the networked system and general software development.
           If you are interested, feel free to check out my{" "}
-          <Link className="text-sky-300 after:content-['_↗']" href="/work">
+          <Link className="text-secondary after:content-['_↗']" href="/work">
             Portfolio
           </Link>
           . Besides the work, I’m a music enthusiast and also a 10 YOE guitar
           player. I publish my cover or arrangement on{" "}
           <Link
             href="https://space.bilibili.com/14674557"
-            className="text-sky-300 after:content-['_↗']"
+            className="text-secondary after:content-['_↗']"
           >
             Bilibili
           </Link>{" "}
           and{" "}
           <Link
             href="https://www.youtube.com/channel/UC12KqSODuNK6OERQ8RkZCBw"
-            className="text-sky-300 after:content-['_↗']"
+            className="text-secondary after:content-['_↗']"
           >
             Youtube
           </Link>

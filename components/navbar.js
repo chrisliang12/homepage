@@ -13,8 +13,8 @@ const LinkItem = ({ href, path, children }) => {
       href={href}
       className={
         active
-          ? "hidden md:block bg-purple-300 p-2 m-2 rounded-lg hover:underline underline-offset-4 text-stone-800"
-          : "hover:bg-sky-100 p-2 m-2 rounded-lg hover:underline underline-offset-4 hover:bg-opacity-20 hover:text-purple-300 hidden md:block"
+          ? "hidden md:block bg-secondary p-2 m-2 rounded-lg hover:underline underline-offset-4 text-neutral"
+          : "hover:bg-primary p-2 m-2 rounded-lg hover:underline underline-offset-4 hover:bg-opacity-20 hover:text-primary hidden md:block"
       }
     >
       {children}
@@ -22,11 +22,11 @@ const LinkItem = ({ href, path, children }) => {
   );
 };
 
-const Navbar = () => {
+const Navbar = ({ theme, setTheme }) => {
   const router = useRouter();
   const path = router.pathname;
   return (
-    <header className="sticky top-0 flex justify-between items-start max-w-7xl mx-auto z-20 bg-orange-50 dark:bg-[rgb(36,36,36)] text-slate-800 dark:text-white rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-30 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-30">
+    <header className="sticky top-0 flex justify-between items-start max-w-7xl mx-auto z-20 bg-base-100 text-primary rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-30">
       <motion.div
         initial={{
           opacity: 0,
@@ -53,7 +53,7 @@ const Navbar = () => {
       </motion.div>
 
       <div className="flex flex-row items-center">
-        <ThemeToggle />
+        <ThemeToggle theme={theme} setTheme={setTheme} />
 
         <div className="md:hidden">
           <div className="dropdown dropdown-end">
@@ -66,12 +66,12 @@ const Navbar = () => {
             >
               <HiMenuAlt2
                 tabIndex="0"
-                className="w-9 h-9 m-2 p-1 text-purple-300 rounded-lg border border-purple-300 focus:text-white"
+                className="w-9 h-9 m-2 p-1 text-primary rounded-lg border border-primary focus:text-white"
               />
             </motion.div>
             <ul
               tabIndex="0"
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact text-neutral dropdown-content mt-3 mr-2 p-2 shadow bg-secondary rounded-box w-52"
             >
               <li>
                 <Link href="/">About</Link>

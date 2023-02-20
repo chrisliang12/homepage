@@ -2,11 +2,13 @@ import Navbar from "../navbar";
 import Head from "next/head";
 import Footer from "../footer";
 import Rig from "../rig";
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 
 const Layout = ({ children }) => {
+  const [theme, setTheme] = useState("myDark");
+  console.log(theme);
   return (
-    <div className="bg-orange-50 dark:bg-[rgb(36,36,36)] text-white min-h-screen">
+    <div data-theme={theme} className="bg-base-100 min-h-screen">
       <Head>
         <title>Yong&apos;s Homepage</title>
         <meta name="description" content="Yong Liang - Homepage" />
@@ -14,7 +16,7 @@ const Layout = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
+      <Navbar theme={theme} setTheme={setTheme} />
       <div className="max-w-3xl mx-auto px-8 pb-3">
         <Rig />
 

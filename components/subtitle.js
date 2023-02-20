@@ -19,7 +19,7 @@ const Subtitle = ({ children, delay }) => {
       exit={{ y: 25, opacity: 0 }}
       className="mt-4 mb-2"
     >
-      <h2 className="text-xl underline underline-offset-4 decoration-purple-300">
+      <h2 className="text-xl underline underline-offset-4 decoration-secondary">
         {children}
       </h2>
     </motion.div>

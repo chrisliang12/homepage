@@ -22,7 +22,7 @@ const Proj_Transmission = () => {
           delay: 0.1,
         }}
         exit={{ y: 25, opacity: 0 }}
-        className="text-xl breadcrumbs text-purple-300"
+        className="text-xl breadcrumbs text-secondary"
       >
         <ul>
           <li>
