@@ -3,6 +3,7 @@ import Link from "next/link";
 import Subtitle from "@/components/subtitle";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import YoutubeVideo from "@/components/YoutubeVideo";
 
 const ProjVisualizer = () => {
   return (
@@ -57,7 +58,7 @@ const ProjVisualizer = () => {
                 d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
               ></path>
             </svg>
-            Pathfinding Visualizer
+            youBot Controller
           </li>
         </ul>
       </motion.div>
@@ -79,19 +80,18 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <p className="text-justify indent-4">
-          An app to visualize the searching pattern of different pathfinding
-          algorithms. The algorithms can be visualized including BFS, DFS, Best
-          First, Dijkstra, and A*. This app also provide basic maze
-          customization feature which can let user create their own maze and run
-          algorithms within it.{" "}
+          A program written in Matlab to control an mobile manipulator. The
+          software includes a trajectory generator, a kinematics simulaotr, and
+          a feedforward + feedback controller. Tested the program via 3D
+          simulation in CoppeliaSim.
         </p>
-
         <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
         </h3>
-        <p className="inline-block">React, Bootstrap, JavaScript, HTML, CSS</p>
+        <p className="inline-block">
+          Matlab, CoppeliaSim, Feedforward + Feedback Control, Robot Kinematics
+        </p>
         <br />
-
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Link
         </h3>
@@ -101,33 +101,13 @@ const ProjVisualizer = () => {
         >
           https://github.com/chrisliang12
         </Link>
+        <br />
+        <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
+          Associated with
+        </h3>
+        <p className="inline-block">MAE 204 - Robotics (A+)</p>{" "}
       </motion.div>
 
-      <motion.div
-        initial={{
-          opacity: 0,
-          y: 50,
-        }}
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          duration: 0.5,
-          ease: "easeInOut",
-          delay: 0.3,
-        }}
-        exit={{ y: 25, opacity: 0 }}
-      >
-        <Subtitle>Highlight</Subtitle>
-        <ul className="list-inside list-disc indent-4">
-          <li>Built with React and Bootstrap</li>
-          <li>Easy to use and well designed control panel</li>
-          <li>Speed and maze size control</li>
-          <li>Maze customization</li>
-          <li>Implemented with two types of heuristics</li>
-        </ul>
-      </motion.div>
       <motion.div
         initial={{
           opacity: 0,
@@ -145,14 +125,14 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <Subtitle>Demo</Subtitle>
-        <div className="w-full aspect-video relative">
-          <Image
-            src="/../public/pathfinding/demo.gif"
-            fill
-            alt="pathfinding app demo"
-            className="rounded-2xl"
-          />
-        </div>
+
+        <iframe
+          src="https://www.youtube.com/embed/47fY2Zvqdqk"
+          title="YouTube Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="w-full aspect-video rounded-2xl"
+        ></iframe>
       </motion.div>
     </div>
   );

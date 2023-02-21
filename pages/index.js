@@ -37,7 +37,7 @@ export default function Home() {
             width={100}
             height={100}
             alt="Avatar"
-            className="rounded-full border-info border-4 w-24 md:w-36"
+            className="rounded-full border-primary border-4 w-24 md:w-36"
           />
         </div>
         <div className="md:col-start-3 md:col-end-8 text-left md:text-right">

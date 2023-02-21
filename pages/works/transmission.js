@@ -4,7 +4,7 @@ import Subtitle from "@/components/subtitle";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const Proj_Transmission = () => {
+const ProjTransmission = () => {
   return (
     <div>
       <motion.div
@@ -22,11 +22,11 @@ const Proj_Transmission = () => {
           delay: 0.1,
         }}
         exit={{ y: 25, opacity: 0 }}
-        className="text-xl breadcrumbs text-primary"
+        className="text-xl breadcrumbs"
       >
         <ul>
           <li>
-            <Link href="/work" className="text-info">
+            <Link href="/work">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -43,7 +43,7 @@ const Proj_Transmission = () => {
               Work
             </Link>
           </li>
-          <li>
+          <li className="text-primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -261,4 +261,4 @@ const Proj_Transmission = () => {
   );
 };
 
-export default Proj_Transmission;
+export default ProjTransmission;

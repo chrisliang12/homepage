@@ -58,7 +58,7 @@ export default function Project() {
         </ProjectItem>
 
         <ProjectItem
-          link="/works/Visualizer"
+          link="/works/visualizer"
           imgSrc="/../public/pathfinding/page.png"
           delay={0.4}
         >
@@ -85,7 +85,7 @@ export default function Project() {
         </ProjectItem>
 
         <ProjectItem
-          link="/works/youBot"
+          link="/works/youbot"
           imgSrc="/../public/youBot/youBot.png"
           delay={0.5}
         >
