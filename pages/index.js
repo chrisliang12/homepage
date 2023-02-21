@@ -37,14 +37,14 @@ export default function Home() {
             width={100}
             height={100}
             alt="Avatar"
-            className="rounded-full border-primary border-4 w-24 md:w-36"
+            className="rounded-full border-info border-4 w-24 md:w-36"
           />
         </div>
         <div className="md:col-start-3 md:col-end-8 text-left md:text-right">
-          <h2 className="py-2 text-3xl md:text-5xl headings tracking-widest">
+          <h2 className="py-2 text-3xl md:text-5xl headings tracking-widest hover:text-info hover:font-bold">
             Yong Liang
           </h2>
-          <p className="headings text-normal md:text-lg tracking-wider">
+          <p className="headings text-normal md:text-lg tracking-wider hover:text-info">
             M.S. Student{" "}
             <Link className="hover:text-secondary" href="https://ucsd.edu/">
               @UCSD

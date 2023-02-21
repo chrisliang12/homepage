@@ -22,11 +22,11 @@ const Proj_Transmission = () => {
           delay: 0.1,
         }}
         exit={{ y: 25, opacity: 0 }}
-        className="text-xl breadcrumbs text-secondary"
+        className="text-xl breadcrumbs text-primary"
       >
         <ul>
           <li>
-            <Link href="/work" className="text-white">
+            <Link href="/work" className="text-info">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -61,30 +61,7 @@ const Proj_Transmission = () => {
           </li>
         </ul>
       </motion.div>
-      <motion.div
-        initial={{
-          opacity: 0,
-          y: 50,
-        }}
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          duration: 0.5,
-          ease: "easeInOut",
-          delay: 0.1,
-        }}
-        exit={{ y: 25, opacity: 0 }}
-        className="relative w-full aspect-video mx-auto my-2"
-      >
-        <Image
-          alt="image"
-          src="/../public/SWP/swp.png"
-          fill
-          className="mx-auto rounded-2xl"
-        />
-      </motion.div>
+
       <motion.div
         initial={{
           opacity: 0,
@@ -101,7 +78,7 @@ const Proj_Transmission = () => {
         }}
         exit={{ y: 25, opacity: 0 }}
       >
-        <p className="mt-4 text-justify indent-4">
+        <p className="text-justify indent-4">
           An emulator with an CLI in which a customized reliable transmission
           protocol based on Sliding Window is implemented. The emulator supports
           a maximum of 256 senders and receivers. Each sender is capable of
@@ -110,13 +87,22 @@ const Proj_Transmission = () => {
           simultaneously.{" "}
         </p>
 
-        <h3 className="mt-4 ml-4 inline-block bg-sky-300 rounded-sm px-2 mr-2">
+        <div className="relative w-full aspect-video mx-auto my-4">
+          <Image
+            alt="image"
+            src="/../public/SWP/swp.png"
+            fill
+            className="mx-auto rounded-2xl"
+          />
+        </div>
+
+        <h3 className="ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
         </h3>
         <p className="inline-block">C, Multi-threading</p>
         <br />
 
-        <h3 className="mt-2 ml-4 inline-block bg-sky-300 rounded-sm px-2 mr-2">
+        <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Link
         </h3>
         <Link

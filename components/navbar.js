@@ -13,8 +13,8 @@ const LinkItem = ({ href, path, children }) => {
       href={href}
       className={
         active
-          ? "hidden md:block bg-secondary p-2 m-2 rounded-lg hover:underline underline-offset-4 text-neutral"
-          : "hover:bg-primary p-2 m-2 rounded-lg hover:underline underline-offset-4 hover:bg-opacity-20 hover:text-primary hidden md:block"
+          ? "hidden md:block bg-primary p-2 m-2 rounded-lg hover:underline underline-offset-4"
+          : "hover:bg-primary p-2 m-2 rounded-lg hover:underline underline-offset-4 hover:bg-opacity-20 hidden md:block"
       }
     >
       {children}
@@ -26,7 +26,7 @@ const Navbar = ({ theme, setTheme }) => {
   const router = useRouter();
   const path = router.pathname;
   return (
-    <header className="sticky top-0 flex justify-between items-start max-w-7xl mx-auto z-20 bg-base-100 text-primary rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-30">
+    <header className="sticky top-0 flex justify-between items-start max-w-7xl mx-auto z-20 bg-base-100 rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-30">
       <motion.div
         initial={{
           opacity: 0,
@@ -66,7 +66,7 @@ const Navbar = ({ theme, setTheme }) => {
             >
               <HiMenuAlt2
                 tabIndex="0"
-                className="w-9 h-9 m-2 p-1 text-primary rounded-lg border border-primary focus:text-white"
+                className="w-9 h-9 m-2 p-1 text-primary rounded-lg border border-primary focus:text-secondary focus:border-secondary"
               />
             </motion.div>
             <ul

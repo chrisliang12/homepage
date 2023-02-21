@@ -32,15 +32,23 @@ module.exports = {
       },
       {
         myDark: {
-          primary: "#8d9ddd",
-          secondary: "#e597c2",
-          accent: "#9ac61f",
-          neutral: "#191B1F",
-          "base-100": "#272D49",
-          info: "#2C5BDD",
-          success: "#1AAD83",
-          warning: "#8E780B",
-          error: "#E84F3B",
+          primary: "#8d73dd",
+
+          secondary: "#5f82e2",
+
+          accent: "#a1d104",
+
+          neutral: "#161C22",
+
+          "base-100": "#383851",
+
+          info: "#93C6F6",
+
+          success: "#2BB6A8",
+
+          warning: "#FACD19",
+
+          error: "#FC6B54",
         },
       },
     ],
