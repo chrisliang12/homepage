@@ -13,11 +13,39 @@ export default function Project() {
           imgSrc="/../public/pathfinding/page.png"
           delay={0.2}
         >
-          <h2 className="text-center mt-4 text-xl font-bold">Homepage</h2>
-          <p className="text-center">
+          <h2 className="card-title">Homepage</h2>
+          <p>
             My personal homepage built with React, Next.js, Tailwind CSS, Framer
             Motion and Three.js
           </p>
+          <div className="card-actions justify-end">
+            <div className="badge badge-secondary">React</div>
+            <div className="badge badge-secondary">Next</div>
+            <div className="badge badge-secondary">Tailwind</div>
+            <div className="badge badge-secondary">daisyUI</div>
+            <div className="badge badge-secondary">ThreeJS</div>
+            <div className="badge badge-secondary">Framer</div>
+          </div>
+        </ProjectItem>
+
+        <ProjectItem
+          link="/works/homepage"
+          imgSrc="/../public/pathfinding/page.png"
+          delay={0.2}
+        >
+          <h2 className="card-title">Online Library Service</h2>
+          <p>
+            An full stack online library service which allows users to browse /
+            borrow / return books.
+          </p>
+          <div className="card-actions justify-end">
+            <div className="badge badge-secondary">React</div>
+            <div className="badge badge-secondary">Bootstrap</div>
+            <div className="badge badge-secondary">SpringBoot</div>
+            <div className="badge badge-secondary">MySQL</div>
+            <div className="badge badge-secondary">OktaSDK</div>
+            <div className="badge badge-secondary">Stripe</div>
+          </div>
         </ProjectItem>
 
         <ProjectItem
@@ -25,14 +53,11 @@ export default function Project() {
           imgSrc="/../public/SWP/swp.png"
           delay={0.2}
         >
-          <h2 className="text-center mt-4 text-xl font-bold">
-            Reliable Transmission Emulator
-          </h2>
-          <p className="text-center">
-            An emulator with CLI for data transmission based on customized
-            Sliding Window Protocol, supporting a maximum of 256 senders and
-            receivers.
-          </p>
+          <h2 className="card-title">Reliable Transmission Emulator</h2>
+          <p>Implementation of a customized Sliding Window Protocol. </p>
+          <div className="card-actions justify-end">
+            <div className="badge badge-secondary">C</div>
+          </div>
         </ProjectItem>
 
         <ProjectItem
@@ -40,10 +65,12 @@ export default function Project() {
           imgSrc="/../public/nachos/nachos.jpg"
           delay={0.3}
         >
-          <h2 className="text-center mt-4 text-xl font-bold">Nachos</h2>
-          <p className="text-center">
-            Re-implementation of the famous OS Project
-          </p>
+          <h2 className="card-title">Nachos</h2>
+          <p>Re-implementation of the Nachos OS Project</p>
+          <div className="card-actions justify-end">
+            <div className="badge badge-secondary">C</div>
+            <div className="badge badge-secondary">Java</div>
+          </div>
         </ProjectItem>
 
         <ProjectItem
@@ -51,10 +78,14 @@ export default function Project() {
           imgSrc="/../public/surfstore/Architect.png"
           delay={0.3}
         >
-          <h2 className="text-center mt-4 text-xl font-bold">Surfstore</h2>
-          <p className="text-center">
-            A distributed network storage service with fault-tolerance
-          </p>
+          <h2 className="card-title">Surfstore</h2>
+          <p>A distributed network storage service with fault-tolerance</p>
+          <div className="card-actions justify-end">
+            <div className="badge badge-secondary">Go</div>
+            <div className="badge badge-secondary">gRPC</div>
+            <div className="badge badge-secondary">Protobuf</div>
+            <div className="badge badge-secondary">RAFT</div>
+          </div>
         </ProjectItem>
 
         <ProjectItem
@@ -62,12 +93,13 @@ export default function Project() {
           imgSrc="/../public/pathfinding/page.png"
           delay={0.4}
         >
-          <h2 className="text-center mt-4 text-xl font-bold">
-            Pathfinding Visualizer
-          </h2>
-          <p className="text-center">
-            An app built with React to visualize pathfinding algorithms
-          </p>
+          <h2 className="card-title">Pathfinding Visualizer</h2>
+          <p>An app built with React to visualize pathfinding algorithms</p>
+          <div className="card-actions justify-end">
+            <div className="badge badge-secondary">React</div>
+            <div className="badge badge-secondary">Bootstrap</div>
+            <div className="badge badge-secondary">JavaScript</div>
+          </div>
         </ProjectItem>
 
         <ProjectItem
@@ -75,13 +107,15 @@ export default function Project() {
           imgSrc="/../public/mountain-car/mcar.png"
           delay={0.4}
         >
-          <h2 className="text-center mt-4 text-xl font-bold">
-            Mountain Car Challenge
-          </h2>
-          <p className="text-center">
-            Implementation of several RL algorithms to solve the mountain car
-            (continuous) challenge
-          </p>
+          <h2 className="card-title">Mountain Car Challenge</h2>
+          <p>Solution to the OpenAI mountain car (continuous) challenge</p>
+          <div className="card-actions justify-end">
+            <div className="badge badge-secondary">Python</div>
+            <div className="badge badge-secondary">PyTorch</div>
+            <div className="badge badge-secondary">Sarsa</div>
+            <div className="badge badge-secondary">Q-learning</div>
+            <div className="badge badge-secondary">Deep Learning</div>
+          </div>
         </ProjectItem>
 
         <ProjectItem
@@ -89,13 +123,16 @@ export default function Project() {
           imgSrc="/../public/youBot/youBot.png"
           delay={0.5}
         >
-          <h2 className="text-center mt-4 text-xl font-bold">
-            youBot Controller
-          </h2>
-          <p className="text-center">
+          <h2 className="card-title">youBot Controller</h2>
+          <p>
             A software controlling a mobile manipulator in the Coppelia
             environment
           </p>
+          <div className="card-actions justify-end">
+            <div className="badge badge-secondary">Matlab</div>
+            <div className="badge badge-secondary">Robot Kinematics</div>
+            <div className="badge badge-secondary">CoppeliaSim</div>
+          </div>
         </ProjectItem>
       </div>
     </div>

@@ -1,5 +1,7 @@
+import Title from "@/components/title";
 import Link from "next/link";
 import Subtitle from "@/components/subtitle";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const ProjVisualizer = () => {
@@ -55,7 +57,7 @@ const ProjVisualizer = () => {
                 d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
               ></path>
             </svg>
-            youBot Controller
+            Nachos
           </li>
         </ul>
       </motion.div>
@@ -77,34 +79,76 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <p className="text-justify indent-4">
-          A program written in Matlab to control an mobile manipulator. The
-          software includes a trajectory generator, a kinematics simulaotr, and
-          a feedforward + feedback controller. Tested the program via 3D
-          simulation in CoppeliaSim.
+          An re-implementation of Nachos operating system. The main work of this
+          project includes: building the nachos thread system, implementing a
+          core set of system calls and developing an memory management system
+          with demand paging and page swapping. Nachos can run user-level MIPS
+          program.{" "}
         </p>
+
         <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
         </h3>
-        <p className="inline-block">
-          Matlab, CoppeliaSim, Feedforward + Feedback Control, Robot Kinematics
-        </p>
+        <p className="inline-block">Java, C</p>
         <br />
+
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Link
         </h3>
         <Link
-          href="https://github.com/chrisliang12"
+          href="https://github.com/chrisliang12/OS-Project"
           className="hover:text-sky-300"
         >
-          https://github.com/chrisliang12
+          https://github.com/chrisliang12/OS-Project
         </Link>
-        <br />
-        <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Associated with
-        </h3>
-        <p className="inline-block">MAE 204 - Robotics (A+)</p>{" "}
       </motion.div>
 
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 50,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 0.5,
+          ease: "easeInOut",
+          delay: 0.3,
+        }}
+        exit={{ y: 25, opacity: 0 }}
+      >
+        <Subtitle>Highlights</Subtitle>
+        <ul className="list-outside ml-8 list-disc ">
+          <li>
+            Built the nachos thread system, including an Alarm class to enable
+            timer interrupts and other thread-related system calls like
+            thread.join()
+          </li>
+          <li>
+            Implemented condition variables using interrupts disable and restore
+          </li>
+          <li>
+            Developed a core set of file system calls, including creat(),
+            open(), read(), write(), close() and unlink()
+          </li>
+          <li>
+            Implemented process-related system calls - exec(), join() and exit()
+          </li>
+          <li>
+            Supported for multiprogramming with the implementation of page table
+          </li>
+          <li>
+            Enhanced the multiprogramming capability by implementing demand
+            paging and page swapping mechanism with the clock algorithm
+          </li>
+          <li>
+            You can run multiple user-level MIPS program on top of the Nachos at
+            the same time
+          </li>
+        </ul>
+      </motion.div>
       <motion.div
         initial={{
           opacity: 0,
@@ -122,14 +166,14 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <Subtitle>Demo</Subtitle>
-
-        <iframe
-          src="https://www.youtube.com/embed/47fY2Zvqdqk"
-          title="YouTube Video"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="w-full aspect-video rounded-2xl"
-        ></iframe>
+        <div className="w-full aspect-video relative">
+          <Image
+            src="/../public/pathfinding/demo.gif"
+            fill
+            alt="pathfinding app demo"
+            className="rounded-2xl"
+          />
+        </div>
       </motion.div>
     </div>
   );

@@ -119,7 +119,7 @@ export default function Home() {
         <p className="text-base my-4">
           <Link
             href="https://github.com/chrisliang12"
-            className="p-2 rounded-md hover:bg-opacity-20 hover:text-purple-300 hover:bg-sky-100 hover:underline hover:underline-offset-4"
+            className="p-2 rounded-md hover:bg-opacity-20 hover:text-secondary hover:bg-info hover:underline hover:underline-offset-4"
           >
             <BsGithub className="inline-block mr-2" />
             @chrisliang12
@@ -128,7 +128,7 @@ export default function Home() {
         <p className="text-base my-4">
           <Link
             href="https://space.bilibili.com/14674557"
-            className="p-2 rounded-md hover:bg-opacity-20 hover:text-purple-300 hover:bg-sky-100 hover:underline hover:underline-offset-4"
+            className="p-2 rounded-md hover:bg-opacity-20 hover:text-secondary hover:bg-info hover:underline hover:underline-offset-4"
           >
             <SiBilibili className="inline-block mr-2" />
             @Lestrade_ (Chinese)
@@ -137,7 +137,7 @@ export default function Home() {
         <p className="text-base my-4">
           <Link
             href="https://github.com/chrisliang12"
-            className="p-2 rounded-md hover:bg-opacity-20 hover:text-purple-300 hover:bg-sky-100 hover:underline hover:underline-offset-4"
+            className="p-2 rounded-md hover:bg-opacity-20 hover:text-secondary hover:bg-info hover:underline hover:underline-offset-4"
           >
             <BsYoutube className="inline-block mr-2" />
             @Lestrade_ (English)
@@ -165,7 +165,7 @@ export default function Home() {
         <p className="text-base my-4">
           <Link
             href="mailto:yoliang@ucsd.edu"
-            className="p-2 rounded-md hover:bg-opacity-20 hover:text-purple-300 hover:bg-sky-100 hover:underline hover:underline-offset-4"
+            className="p-2 rounded-md hover:bg-opacity-20 hover:text-secondary hover:bg-info hover:underline hover:underline-offset-4"
           >
             <MdEmail className="inline-block mr-2" />
             yoliang@ucsd.edu
@@ -174,7 +174,7 @@ export default function Home() {
         <p className="text-base my-4">
           <Link
             href="https://www.linkedin.com/in/yoliang/"
-            className="p-2 rounded-md hover:bg-opacity-20 hover:text-purple-300 hover:bg-sky-100 hover:underline hover:underline-offset-4"
+            className="p-2 rounded-md hover:bg-opacity-20 hover:text-secondary hover:bg-info hover:underline hover:underline-offset-4"
           >
             <BsLinkedin className="inline-block mr-2" />
             @yoliang
