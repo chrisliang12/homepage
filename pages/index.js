@@ -9,6 +9,7 @@ import Greeting from "../components/greeting";
 import Title from "@/components/title";
 
 export default function Home() {
+  let avatarId = Math.floor(Math.random() * 2) + 1;
   return (
     <div>
       {/* Greeting */}
@@ -33,7 +34,7 @@ export default function Home() {
       >
         <div className="mt-5 mx-auto md:col-start-1 md:mt-0">
           <Image
-            src="/../public/avatar.jpg"
+            src={`/../public/avatar/avatar${avatarId}.jpg`}
             width={100}
             height={100}
             alt="Avatar"

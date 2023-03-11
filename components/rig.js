@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { loadGLTFModel } from "./model";
-import Spinner from './spinner';
+import Spinner from "./spinner";
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4));
@@ -12,7 +12,7 @@ const Rig = () => {
   const refContainer = useRef();
   const [loading, setLoading] = useState(true);
   const refRenderer = useRef();
-  const urlDogGLB = "http://127.0.0.1:5500/public/Satoru.glb";
+  const urlDogGLB = "http://127.0.0.1:5500/public/MyRig.glb";
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer;
@@ -52,7 +52,7 @@ const Rig = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.0025 + 4.8;
+      const scale = scH * 0.035 + 4.8;
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -119,9 +119,12 @@ const Rig = () => {
   }, [handleWindowResize]);
 
   return (
-    <div className="w-96 h-80 -mt-16 -mb-20 md:w-176 md:h-144 md:-mt-32 md:-mb-48 m-auto" ref={refContainer}>
-      {loading? <Spinner /> : null}
+    <div
+      className="w-96 h-80 -mt-16 -mb-20 md:w-176 md:h-144 md:-mt-32 md:-mb-48 m-auto"
+      ref={refContainer}
+    >
+      {loading ? <Spinner /> : null}
     </div>
-  )
-}
+  );
+};
 export default Rig;
