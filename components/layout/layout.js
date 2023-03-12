@@ -6,7 +6,7 @@ import React, { Suspense, useState } from "react";
 
 const Layout = ({ children }) => {
   const [theme, setTheme] = useState("myDark");
-  console.log(theme);
+
   return (
     <div data-theme={theme} className="bg-base-100 min-h-screen">
       <Head>
