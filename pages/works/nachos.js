@@ -168,7 +168,7 @@ const ProjVisualizer = () => {
         <Subtitle>Demo</Subtitle>
         <div className="w-full aspect-video relative">
           <Image
-            src="/../public/pathfinding/demo.gif"
+            src="/pathfinding/demo.gif"
             fill
             alt="pathfinding app demo"
             className="rounded-2xl"

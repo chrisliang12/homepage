@@ -30,7 +30,7 @@ export default function Project() {
 
         <ProjectItem
           link="/works/homepage"
-          imgSrc="/../public/pathfinding/page.png"
+          imgSrc="/pathfinding/page.png"
           delay={0.2}
         >
           <h2 className="card-title">Online Library Service</h2>
@@ -50,7 +50,7 @@ export default function Project() {
 
         <ProjectItem
           link="/works/transmission"
-          imgSrc="/../public/SWP/swp.png"
+          imgSrc="/SWP/swp.png"
           delay={0.2}
         >
           <h2 className="card-title">Reliable Transmission Emulator</h2>
@@ -62,7 +62,7 @@ export default function Project() {
 
         <ProjectItem
           link="/works/nachos"
-          imgSrc="/../public/nachos/nachos.jpg"
+          imgSrc="/nachos/nachos.jpg"
           delay={0.3}
         >
           <h2 className="card-title">Nachos</h2>
@@ -75,7 +75,7 @@ export default function Project() {
 
         <ProjectItem
           link="/works/surfstore"
-          imgSrc="/../public/surfstore/Architect.png"
+          imgSrc="/surfstore/Architect.png"
           delay={0.3}
         >
           <h2 className="card-title">Surfstore</h2>
@@ -90,7 +90,7 @@ export default function Project() {
 
         <ProjectItem
           link="/works/visualizer"
-          imgSrc="/../public/pathfinding/page.png"
+          imgSrc="/pathfinding/page.png"
           delay={0.4}
         >
           <h2 className="card-title">Pathfinding Visualizer</h2>
@@ -104,7 +104,7 @@ export default function Project() {
 
         <ProjectItem
           link="/works/rl"
-          imgSrc="/../public/mountain-car/mcar.png"
+          imgSrc="/mountain-car/mcar.png"
           delay={0.4}
         >
           <h2 className="card-title">Mountain Car Challenge</h2>
@@ -120,7 +120,7 @@ export default function Project() {
 
         <ProjectItem
           link="/works/youbot"
-          imgSrc="/../public/youBot/youBot.png"
+          imgSrc="/youBot/youBot.png"
           delay={0.5}
         >
           <h2 className="card-title">youBot Controller</h2>

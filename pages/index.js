@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -34,7 +33,7 @@ export default function Home() {
       >
         <div className="mt-5 mx-auto md:col-start-1 md:mt-0">
           <Image
-            src={`/../public/avatar/avatar${avatarId}.jpg`}
+            src={`/avatar/avatar${avatarId}.jpg`}
             width={100}
             height={100}
             alt="Avatar"

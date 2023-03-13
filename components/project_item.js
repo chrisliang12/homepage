@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/Link";
+import Link from "next/link";
 
 const ProjectItem = ({ children, imgSrc, delay, link, stack }) => {
   return (

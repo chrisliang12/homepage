@@ -26,7 +26,7 @@ const Navbar = ({ theme, setTheme }) => {
   const router = useRouter();
   const path = router.pathname;
   return (
-    <header className="sticky top-0 flex justify-between items-start max-w-7xl mx-auto z-20 bg-base-100 rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-30">
+    <header className="sticky top-0 flex justify-between items-start max-w-6xl mx-auto z-20 bg-base-100 rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-30">
       <motion.div
         initial={{
           opacity: 0,
@@ -37,9 +37,14 @@ const Navbar = ({ theme, setTheme }) => {
         transition={{ duration: 0.5 }}
         className="flex flex-row items-center"
       >
-        <Link href="/" className="font-bold my-2 mr-3 p-2">
-          <SiCoffeescript className="inline-block mr-1 ml-3 w-6 h-6" />
-          Yong Liang
+        <Link href="/" className="font-black my-2">
+          <Image
+            src="/logo.png"
+            height={30}
+            width={30}
+            className="mr-1 ml-3 inline-block"
+            alt="logo"
+          />
         </Link>
         <LinkItem href="/" path={path} className="font-light">
           About

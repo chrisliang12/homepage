@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "sync": "aws s3 sync ./build 's3://yoliang.xyz/'",
     "start": "next start",
     "lint": "next lint"
   },

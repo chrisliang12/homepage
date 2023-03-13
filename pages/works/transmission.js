@@ -90,7 +90,7 @@ const ProjTransmission = () => {
         <div className="relative w-full aspect-video mx-auto my-4">
           <Image
             alt="image"
-            src="/../public/SWP/swp.png"
+            src="/SWP/swp.png"
             fill
             className="mx-auto rounded-2xl"
           />
