@@ -121,7 +121,7 @@ const Rig = () => {
   return (
     <>
       <div
-        className="w-96 h-80 -mt-16 -mb-20 md:w-176 md:h-144 md:-mt-32 md:-mb-48 m-auto"
+        className="w-80 h-72 -mt-2 -mb-20 md:w-176 md:h-144 md:-mt-32 md:-mb-48 m-auto"
         ref={refContainer}
       >
         {loading && <Spinner />}
