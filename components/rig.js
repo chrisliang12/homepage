@@ -52,7 +52,7 @@ const Rig = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.035 + 6;
+      const scale = scH * 0.03 + 6;
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -121,7 +121,7 @@ const Rig = () => {
   return (
     <>
       <div
-        className="w-80 h-72 -mt-2 -mb-20 md:w-176 md:h-144 md:-mt-32 md:-mb-48 m-auto"
+        className="w-80 h-72 -mb-20 md:w-176 md:h-160 md:-mt-32 md:-mb-48 m-auto"
         ref={refContainer}
       >
         {loading && <Spinner />}
