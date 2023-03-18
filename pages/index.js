@@ -74,7 +74,7 @@ export default function Home() {
           San Diego. I have a strong passion for developing cool digital stuff
           and solving real-world problems with code. That’s why I am seeking
           opportunities to work in the software industry and I am especially
-          interested in the networked system and general software development.
+          interested in the distributed system and general software development.
           If you are interested, feel free to check out my{" "}
           <Link className="text-secondary after:content-['_↗']" href="/work">
             Portfolio
@@ -94,7 +94,7 @@ export default function Home() {
           >
             Youtube
           </Link>
-          (newly opened channel). Feel free to check them out.
+          (newly opened channel). I will be happy if you check them out!
         </p>
       </motion.div>
 

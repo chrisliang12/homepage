@@ -9,6 +9,26 @@ export default function Project() {
       <Title delay={0.1}>Project</Title>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
         <ProjectItem
+          link="/works/surfstore"
+          imgSrc="/surfstore/Architect.png"
+          delay={0.3}
+        >
+          <h2 className="card-title">Surfstore</h2>
+          <p>
+            A distributed key-value store implemented with RAFT Consensus
+            Algorithm and Consistent Hashing
+          </p>
+          <div className="card-actions justify-end">
+            <div className="badge badge-secondary">Go</div>
+            <div className="badge badge-secondary">gRPC</div>
+            <div className="badge badge-secondary">Protobuf</div>
+            <div className="badge badge-secondary">SQL</div>
+            <div className="badge badge-secondary">RAFT</div>
+            <div className="badge badge-secondary">Consistent Hashing</div>
+          </div>
+        </ProjectItem>
+
+        <ProjectItem
           link="/works/homepage"
           imgSrc="/../public/pathfinding/page.png"
           delay={0.2}
@@ -29,7 +49,7 @@ export default function Project() {
         </ProjectItem>
 
         <ProjectItem
-          link="/works/homepage"
+          link="/works/library"
           imgSrc="/pathfinding/page.png"
           delay={0.2}
         >
@@ -70,21 +90,6 @@ export default function Project() {
           <div className="card-actions justify-end">
             <div className="badge badge-secondary">C</div>
             <div className="badge badge-secondary">Java</div>
-          </div>
-        </ProjectItem>
-
-        <ProjectItem
-          link="/works/surfstore"
-          imgSrc="/surfstore/Architect.png"
-          delay={0.3}
-        >
-          <h2 className="card-title">Surfstore</h2>
-          <p>A distributed network storage service with fault-tolerance</p>
-          <div className="card-actions justify-end">
-            <div className="badge badge-secondary">Go</div>
-            <div className="badge badge-secondary">gRPC</div>
-            <div className="badge badge-secondary">Protobuf</div>
-            <div className="badge badge-secondary">RAFT</div>
           </div>
         </ProjectItem>
 
