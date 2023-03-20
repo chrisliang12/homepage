@@ -57,7 +57,7 @@ const ProjVisualizer = () => {
                 d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
               ></path>
             </svg>
-            Surfstore
+            Homepage
           </li>
         </ul>
       </motion.div>
@@ -79,34 +79,23 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <p className="text-justify indent-4">
-          Surfstore is a scalable distributed key-value store that allows users
-          to store and synchronize their files in the cloud. The key-value store
-          consists of Meta Stores, which store file metadata, and Block Stores,
-          which store the actual block data of the file. The RAFT Consensus
-          Algorithm is implemented with the Meta Store to make the service
-          fault-tolerant. For the Block Stores, a technique called Consistent
-          Hashing is adopted to efficiently scale the service. A binary search
-          algorithm is used in the Consistent Hashing Ring to accelerate the
-          server lookup.{" "}
+          My personal homepage and portfolio built with modern frameworks.{" "}
         </p>
 
         <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
         </h3>
         <p className="inline-block">
-          Go, gRPC, Protobuf, SQLite, RAFT Consensus Algorithm, Consistent
-          Hashing
+          React, Next.js, Tailwind CSS, daisyUI, Three.js, Framer Motion,
+          Blender
         </p>
         <br />
 
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Link
         </h3>
-        <Link
-          href="https://github.com/chrisliang12/OS-Project"
-          className="hover:text-sky-300"
-        >
-          https://github.com/chrisliang12/OS-Project
+        <Link href="https://www.yoliang.xyz/" className="hover:text-sky-300">
+          yoliang.xyz
         </Link>
       </motion.div>
 
@@ -128,18 +117,24 @@ const ProjVisualizer = () => {
       >
         <Subtitle>Highlights</Subtitle>
         <ul className="list-outside ml-8 list-disc ">
-          <li>A scalable key-value store that provides cloud file syncing.</li>
-          <li>Maintained a local index file implemented with SQLite.</li>
-          <li>Scaled the cloud storage with Consistent Hashing.</li>
           <li>
-            Implemented binary search in Consistent Hashing for fast server
-            lookup.
+            Built a fully responsive multipage website with React and Next.js.
           </li>
           <li>
-            Increased fault-tolerance with a subset of RAFT Consensus Algorithm.
+            Created beautiful UI and light/dark mode with Tailwind CSS and
+            daisyUI.
+          </li>
+          <li>Designed and modeled the personal 3D rig model with Blender.</li>
+          <li>
+            Achieved a soft lightening and shadow effect through Blender texture
+            baking.
           </li>
           <li>
-            Developed onflict resolution and persistence using file versioning
+            Loaded the 3D model and created camera motion effect with Three.js.
+          </li>
+          <li>
+            Developed a smooth transition effect between the transition of pages
+            with Framer Motion
           </li>
         </ul>
       </motion.div>

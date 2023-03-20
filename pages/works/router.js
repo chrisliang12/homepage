@@ -57,7 +57,7 @@ const ProjVisualizer = () => {
                 d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
               ></path>
             </svg>
-            Surfstore
+            Simple Router
           </li>
         </ul>
       </motion.div>
@@ -79,34 +79,23 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <p className="text-justify indent-4">
-          Surfstore is a scalable distributed key-value store that allows users
-          to store and synchronize their files in the cloud. The key-value store
-          consists of Meta Stores, which store file metadata, and Block Stores,
-          which store the actual block data of the file. The RAFT Consensus
-          Algorithm is implemented with the Meta Store to make the service
-          fault-tolerant. For the Block Stores, a technique called Consistent
-          Hashing is adopted to efficiently scale the service. A binary search
-          algorithm is used in the Consistent Hashing Ring to accelerate the
-          server lookup.{" "}
+          A simple router implementation running on top of Mininet. The router
+          can routes normal packets/frames like Ethernet Frames, IP Packets,
+          TCP/UDP segments, etc. Some networking protocols are also implemented,
+          such as Ethernet, ARP, IP and ICMP.{" "}
         </p>
 
         <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
         </h3>
-        <p className="inline-block">
-          Go, gRPC, Protobuf, SQLite, RAFT Consensus Algorithm, Consistent
-          Hashing
-        </p>
+        <p className="inline-block">C, Mininet, VirtualBox</p>
         <br />
 
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Link
         </h3>
-        <Link
-          href="https://github.com/chrisliang12/OS-Project"
-          className="hover:text-sky-300"
-        >
-          https://github.com/chrisliang12/OS-Project
+        <Link href="https://www.yoliang.xyz/" className="hover:text-sky-300">
+          yoliang.xyz
         </Link>
       </motion.div>
 
@@ -128,18 +117,18 @@ const ProjVisualizer = () => {
       >
         <Subtitle>Highlights</Subtitle>
         <ul className="list-outside ml-8 list-disc ">
-          <li>A scalable key-value store that provides cloud file syncing.</li>
-          <li>Maintained a local index file implemented with SQLite.</li>
-          <li>Scaled the cloud storage with Consistent Hashing.</li>
           <li>
-            Implemented binary search in Consistent Hashing for fast server
-            lookup.
+            Developed the router with C to achieve a blast fast performance.
           </li>
           <li>
-            Increased fault-tolerance with a subset of RAFT Consensus Algorithm.
+            Applied a subset of Ethernet, IP, ARP, ICMP protocols to handle the
+            corresponding packets.
           </li>
+          <li>Developed an ARP cache to increase the routing efficiency.</li>
+          <li>Handled the packet forwarding with Longest Prefix Match.</li>
           <li>
-            Developed onflict resolution and persistence using file versioning
+            Tested with various network topologies, including ping, traceroute,
+            HTTP downloads, etc.
           </li>
         </ul>
       </motion.div>

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-const ProjectItem = ({ children, imgSrc, delay, link, stack }) => {
+const ProjectItem = ({ children, imgSrc, delay, link, stack, order }) => {
   return (
     <motion.div
       initial={{

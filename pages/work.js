@@ -11,7 +11,7 @@ export default function Project() {
         <ProjectItem
           link="/works/surfstore"
           imgSrc="/surfstore/Architect.png"
-          delay={0.3}
+          delay={0.2}
         >
           <h2 className="card-title">Surfstore</h2>
           <p>
@@ -51,7 +51,7 @@ export default function Project() {
         <ProjectItem
           link="/works/library"
           imgSrc="/pathfinding/page.png"
-          delay={0.2}
+          delay={0.3}
         >
           <h2 className="card-title">Online Library Service</h2>
           <p>
@@ -69,9 +69,26 @@ export default function Project() {
         </ProjectItem>
 
         <ProjectItem
+          link="/works/router"
+          imgSrc="/router/router.png"
+          delay={0.3}
+        >
+          <h2 className="card-title">Simple Router</h2>
+          <p>
+            A router implementation developed with C and running on top of
+            Mininet.
+          </p>
+          <div className="card-actions justify-end">
+            <div className="badge badge-secondary">C</div>
+            <div className="badge badge-secondary">Mininet</div>
+            <div className="badge badge-secondary">VirtualBox</div>
+          </div>
+        </ProjectItem>
+
+        <ProjectItem
           link="/works/transmission"
           imgSrc="/SWP/swp.png"
-          delay={0.2}
+          delay={0.3}
         >
           <h2 className="card-title">Reliable Transmission Emulator</h2>
           <p>Implementation of a customized Sliding Window Protocol. </p>
@@ -83,7 +100,7 @@ export default function Project() {
         <ProjectItem
           link="/works/nachos"
           imgSrc="/nachos/nachos.jpg"
-          delay={0.3}
+          delay={0.4}
         >
           <h2 className="card-title">Nachos</h2>
           <p>Re-implementation of the Nachos OS Project</p>
@@ -110,7 +127,7 @@ export default function Project() {
         <ProjectItem
           link="/works/rl"
           imgSrc="/mountain-car/mcar.png"
-          delay={0.4}
+          delay={0.5}
         >
           <h2 className="card-title">Mountain Car Challenge</h2>
           <p>Solution to the OpenAI mountain car (continuous) challenge</p>
