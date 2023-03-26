@@ -48,11 +48,7 @@ export default function Project() {
           </div>
         </ProjectItem>
 
-        <ProjectItem
-          link="/works/library"
-          imgSrc="/pathfinding/page.png"
-          delay={0.3}
-        >
+        <ProjectItem link="/works/library" imgSrc="/lib/lib2.png" delay={0.3}>
           <h2 className="card-title">Online Library Service</h2>
           <p>
             An full stack online library service which allows users to browse /

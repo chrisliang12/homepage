@@ -19,42 +19,19 @@ module.exports = {
     themes: [
       {
         myLight: {
-          primary: "#e8ab76",
-          secondary: "#db9d6b",
-          accent: "#c614c9",
-          neutral: "#131B20",
-          "base-100": "#E8E8E8",
-          info: "#3E67EF",
-          success: "#2EB893",
-          warning: "#F5A329",
-          error: "#F5517A",
+          ...require("daisyui/src/colors/themes")["[data-theme=pastel]"],
+          "base-100": "#fffaf4",
+          warning: "#F3D2C3",
         },
       },
       {
         myDark: {
-          primary: "#8d73dd",
-
-          secondary: "#5f82e2",
-
-          accent: "#a1d104",
-
-          neutral: "#161C22",
-
-          "base-100": "#383851",
-
-          info: "#93C6F6",
-
-          success: "#2BB6A8",
-
-          warning: "#FACD19",
-
-          error: "#FC6B54",
+          ...require("daisyui/src/colors/themes")["[data-theme=dracula]"],
+          primary: "#BC93F9",
         },
       },
     ],
-    darkTheme: "myDark",
   },
 
   plugins: [require("daisyui")],
-  darkMode: "class",
 };

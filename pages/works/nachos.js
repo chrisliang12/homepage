@@ -166,14 +166,7 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <Subtitle>Demo</Subtitle>
-        <div className="w-full aspect-video relative">
-          <Image
-            src="/pathfinding/demo.gif"
-            fill
-            alt="pathfinding app demo"
-            className="rounded-2xl"
-          />
-        </div>
+        Wait to add content...
       </motion.div>
     </div>
   );

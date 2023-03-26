@@ -155,7 +155,7 @@ export default function Coursework() {
         }}
         exit={{ y: 25, opacity: 0 }}
       >
-        <p className="mt-4 text-secondary underline underline-offset-4 decoration-secondary">
+        <p className="mt-4 text-info underline underline-offset-4 decoration-info">
           Total GPA: 3.81 / 4.00
         </p>
       </motion.div>

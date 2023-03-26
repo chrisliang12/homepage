@@ -76,21 +76,21 @@ export default function Home() {
           opportunities to work in the software industry and I am especially
           interested in the distributed system and general software development.
           If you are interested, feel free to check out my{" "}
-          <Link className="text-secondary after:content-['_↗']" href="/work">
+          <Link className="text-info after:content-['_↗']" href="/work">
             Portfolio
           </Link>
           . Besides the work, I’m a music enthusiast and also a 10 YOE guitar
           player. I publish my cover or arrangement on{" "}
           <Link
             href="https://space.bilibili.com/14674557"
-            className="text-secondary after:content-['_↗']"
+            className="text-info after:content-['_↗']"
           >
             Bilibili
           </Link>{" "}
           and{" "}
           <Link
             href="https://www.youtube.com/channel/UC12KqSODuNK6OERQ8RkZCBw"
-            className="text-secondary after:content-['_↗']"
+            className="text-info after:content-['_↗']"
           >
             Youtube
           </Link>

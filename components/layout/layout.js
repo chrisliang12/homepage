@@ -5,7 +5,7 @@ import Rig from "../rig";
 import React, { Suspense, useState } from "react";
 
 const Layout = ({ children }) => {
-  const [theme, setTheme] = useState("myDark");
+  const [theme, setTheme] = useState("myLight");
 
   return (
     <div data-theme={theme} className="bg-base-100 min-h-screen">
