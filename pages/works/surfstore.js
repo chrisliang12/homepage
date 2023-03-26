@@ -89,16 +89,11 @@ const ProjVisualizer = () => {
           algorithm is used in the Consistent Hashing Ring to accelerate the
           server lookup.{" "}
         </p>
-
         <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
         </h3>
-        <p className="inline-block">
-          Go, gRPC, Protobuf, SQLite, RAFT Consensus Algorithm, Consistent
-          Hashing
-        </p>
+        Go, gRPC, Protobuf, SQLite, RAFT Consensus Algorithm, Consistent Hashing
         <br />
-
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Link
         </h3>

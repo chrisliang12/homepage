@@ -82,15 +82,11 @@ const ProjVisualizer = () => {
           An full stack online library service implemented with React and Spring
           Boot that allows users to browse / review / borrow / return books.{" "}
         </p>
-
         <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
         </h3>
-        <p className="inline-block">
-          TypeScript, React, Bootstrap, Spring Boot, MySQL, OktaSDK
-        </p>
+        TypeScript, React, Bootstrap, Spring Boot, MySQL, OktaSDK
         <br />
-
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Link
         </h3>

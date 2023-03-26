@@ -85,13 +85,11 @@ const ProjVisualizer = () => {
           with demand paging and page swapping. Nachos can run user-level MIPS
           program.{" "}
         </p>
-
         <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
         </h3>
-        <p className="inline-block">Java, C</p>
+        Java, C
         <br />
-
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Link
         </h3>

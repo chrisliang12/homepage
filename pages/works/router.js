@@ -84,13 +84,11 @@ const ProjVisualizer = () => {
           TCP/UDP segments, etc. Some networking protocols are also implemented,
           such as Ethernet, ARP, IP and ICMP.{" "}
         </p>
-
         <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
         </h3>
-        <p className="inline-block">C, Mininet, VirtualBox</p>
+        C, Mininet, VirtualBox
         <br />
-
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Link
         </h3>

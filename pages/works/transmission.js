@@ -86,7 +86,6 @@ const ProjTransmission = () => {
           receiver is capable of handling multiple sender&apos;s messages
           simultaneously.{" "}
         </p>
-
         <div className="relative w-full aspect-video mx-auto my-4">
           <Image
             alt="image"
@@ -95,13 +94,11 @@ const ProjTransmission = () => {
             className="mx-auto rounded-2xl"
           />
         </div>
-
         <h3 className="ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
         </h3>
-        <p className="inline-block">C, Multi-threading</p>
+        C, Multi-threading
         <br />
-
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Link
         </h3>

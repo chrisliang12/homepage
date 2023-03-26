@@ -85,9 +85,7 @@ const ProjVisualizer = () => {
         <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
         </h3>
-        <p className="inline-block">
-          Matlab, CoppeliaSim, Feedforward + Feedback Control, Robot Kinematics
-        </p>
+        Matlab, CoppeliaSim, Feedforward + Feedback Control, Robot Kinematics
         <br />
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Link

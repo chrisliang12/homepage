@@ -85,13 +85,11 @@ const ProjVisualizer = () => {
           customization feature which can let user create their own maze and run
           algorithms within it.{" "}
         </p>
-
         <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
         </h3>
-        <p className="inline-block">React, Bootstrap, JavaScript, HTML, CSS</p>
+        React, Bootstrap, JavaScript, HTML, CSS
         <br />
-
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Link
         </h3>

@@ -81,16 +81,11 @@ const ProjVisualizer = () => {
         <p className="text-justify indent-4">
           My personal homepage and portfolio built with modern frameworks.{" "}
         </p>
-
         <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
         </h3>
-        <p className="inline-block">
-          React, Next.js, Tailwind CSS, daisyUI, Three.js, Framer Motion,
-          Blender
-        </p>
+        React, Next.js, Tailwind CSS, daisyUI, Three.js, Framer Motion, Blender
         <br />
-
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Link
         </h3>
