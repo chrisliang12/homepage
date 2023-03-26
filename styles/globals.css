@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 html,.headings {
-  font-family: 'Baloo Paaji 2', cursive;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title, .card-title {
+  font-family: 'Lora', serif;
 }

@@ -13,8 +13,8 @@ const LinkItem = ({ href, path, children }) => {
       href={href}
       className={
         active
-          ? "hidden md:block bg-primary p-2 m-2 rounded-lg hover:underline underline-offset-4"
-          : "hover:bg-primary p-2 m-2 rounded-lg hover:underline underline-offset-4 hover:bg-opacity-20 hidden md:block"
+          ? "hidden md:block bg-primary p-2 m-2 rounded-lg hover:underline underline-offset-4 title"
+          : "title hover:bg-primary p-2 m-2 rounded-lg hover:underline underline-offset-4 hover:bg-opacity-20 hidden md:block"
       }
     >
       {children}

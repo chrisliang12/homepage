@@ -6,7 +6,7 @@ import Title from "@/components/title";
 export default function Project() {
   return (
     <div>
-      <Title delay={0.1}>Project</Title>
+      <Title delay={0.1}>Projects</Title>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
         <ProjectItem
           link="/works/surfstore"

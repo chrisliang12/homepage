@@ -6,13 +6,9 @@ export default function Document() {
       <Head>
         <link rel="icon" href="/logo.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Sriracha&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap"
           rel="stylesheet"
         />
       </Head>
