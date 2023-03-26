@@ -43,7 +43,7 @@ export default function Home() {
           <h2 className="py-2 text-3xl md:text-5xl headings tracking-widest hover:text-info hover:font-bold">
             Yong Liang
           </h2>
-          <p className="headings text-normal md:text-lg tracking-wider hover:text-info">
+          <p className="headings text-normal md:text-lg tracking-wider hover:text-info italic">
             M.S. Student{" "}
             <Link className="hover:text-secondary" href="https://ucsd.edu/">
               @UCSD
