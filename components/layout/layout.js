@@ -2,7 +2,7 @@ import Navbar from "../navbar";
 import Head from "next/head";
 import Footer from "../footer";
 import Rig from "../rig";
-import React, { Suspense, useState } from "react";
+import React, { useState } from "react";
 
 const Layout = ({ children }) => {
   const [theme, setTheme] = useState("myLight");
