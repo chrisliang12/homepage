@@ -164,13 +164,11 @@ const ProjVisualizer = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           className="w-full aspect-video rounded-2xl"
-        >
-          <p>
-            Your browser doesn&apos;t support iframes or the content cannot be
-            displayed. (If you are in Mainland China, you need to use a VPN to
-            watch this YouTube video)
-          </p>
-        </iframe>
+        />
+
+        <p className="mt-4 text-sm">
+          (Note: VPN is needed for the video if you are accessing from China)
+        </p>
       </motion.div>
     </div>
   );
