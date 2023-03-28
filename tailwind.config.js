@@ -21,7 +21,7 @@ module.exports = {
         myLight: {
           ...require("daisyui/src/colors/themes")["[data-theme=pastel]"],
           "base-100": "#fffaf4",
-          warning: "#F3D2C3",
+          warning: "#ffbe5c",
         },
       },
       {
