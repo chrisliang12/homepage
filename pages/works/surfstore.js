@@ -104,7 +104,7 @@ const ProjVisualizer = () => {
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Associated with
         </h3>
-        <p className="inline-block">CSE 224 - Networked Systems</p>
+        CSE 224 - Networked Systems
       </motion.div>
 
       <motion.div

@@ -100,7 +100,7 @@ const ProjVisualizer = () => {
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Associated with
         </h3>
-        <p className="inline-block">MAE 204 - Robotics</p>
+        MAE 204 - Robotics
       </motion.div>
 
       <motion.div
