@@ -8,7 +8,7 @@ export default function Project() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
         <ProjectItem
           link="/works/surfstore"
-          imgSrc="/surfstore/Architect.png"
+          imgSrc="/surfstore/surfstore.png"
           delay={0.2}
         >
           <h2 className="card-title">Surfstore</h2>
