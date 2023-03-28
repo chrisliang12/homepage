@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import ThemeToggle from "./theme_toggle";
 import { HiMenuAlt2 } from "react-icons/hi";
-import { useState } from "react";
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href;
@@ -25,24 +24,6 @@ const LinkItem = ({ href, path, children }) => {
 const Navbar = ({ theme, setTheme }) => {
   const router = useRouter();
   const path = router.pathname;
-  const [menuDisplay, setmenuDisplay] = useState(true);
-  const [displayMenuStyle, setdisplayMenuStyle] = useState("");
-
-  const showMenu = () => {
-    setmenuDisplay(!menuDisplay);
-    if (menuDisplay) {
-      setdisplayMenuStyle("");
-    } else {
-      setdisplayMenuStyle("none");
-    }
-    return menuDisplay;
-  };
-
-  const handleFocusOut = () => {
-    if (!menuDisplay) {
-      showMenu();
-    }
-  };
 
   return (
     <header className="sticky top-0 flex justify-between items-start max-w-6xl mx-auto z-20 bg-base-100 rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-30">
@@ -80,7 +61,7 @@ const Navbar = ({ theme, setTheme }) => {
         <ThemeToggle theme={theme} setTheme={setTheme} />
 
         <div className="md:hidden">
-          <div className="dropdown dropdown-end">
+          <div className="dropdown dropdown-end dropdown-hover">
             <motion.div
               key="light"
               tabIndex="0"
@@ -92,14 +73,11 @@ const Navbar = ({ theme, setTheme }) => {
               <HiMenuAlt2
                 tabIndex="0"
                 className="w-9 h-9 m-2 p-1 text-primary rounded-lg border border-primary focus:text-secondary focus:border-secondary"
-                onClick={showMenu}
-                onBlur={handleFocusOut}
               />
             </motion.div>
             <ul
               tabIndex="0"
-              style={{ display: displayMenuStyle }}
-              className="menu menu-compact text-neutral dropdown-content mt-3 mr-2 p-2 shadow bg-secondary rounded-box w-52"
+              className="menu menu-compact text-neutral dropdown-content mr-2 p-2 shadow bg-secondary rounded-box w-52"
             >
               <li>
                 <Link href="/">About</Link>
