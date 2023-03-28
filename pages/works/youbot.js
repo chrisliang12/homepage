@@ -2,7 +2,7 @@ import Link from "next/link";
 import Subtitle from "@/components/subtitle";
 import { motion } from "framer-motion";
 
-const ProjVisualizer = () => {
+const youBotController = () => {
   return (
     <div>
       <motion.div
@@ -137,4 +137,4 @@ const ProjVisualizer = () => {
   );
 };
 
-export default ProjVisualizer;
+export default youBotController;

@@ -3,7 +3,7 @@ import Subtitle from "@/components/subtitle";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const ProjVisualizer = () => {
+const HomePage = () => {
   return (
     <div>
       <motion.div
@@ -159,4 +159,4 @@ const ProjVisualizer = () => {
   );
 };
 
-export default ProjVisualizer;
+export default HomePage;

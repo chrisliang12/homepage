@@ -2,7 +2,7 @@ import Link from "next/link";
 import Subtitle from "@/components/subtitle";
 import { motion } from "framer-motion";
 
-const ProjVisualizer = () => {
+const SimpleRouter = () => {
   return (
     <div>
       <motion.div
@@ -163,4 +163,4 @@ const ProjVisualizer = () => {
   );
 };
 
-export default ProjVisualizer;
+export default SimpleRouter;

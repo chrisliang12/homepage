@@ -3,7 +3,7 @@ import Subtitle from "@/components/subtitle";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const ProjTransmission = () => {
+const Transmission = () => {
   return (
     <div>
       <motion.div
@@ -185,4 +185,4 @@ const ProjTransmission = () => {
   );
 };
 
-export default ProjTransmission;
+export default Transmission;
