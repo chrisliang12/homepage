@@ -124,7 +124,7 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <Subtitle>Highlights</Subtitle>
-        <ul className="list-outside ml-8 list-disc ">
+        <ul className="list-inside pl-4 list-disc ">
           <li>A scalable key-value store that provides cloud file syncing.</li>
           <li>Maintained a local index file implemented with SQLite.</li>
           <li>Scaled the cloud storage with Consistent Hashing.</li>

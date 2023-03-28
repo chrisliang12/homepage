@@ -129,7 +129,7 @@ const ProjTransmission = () => {
         }}
         exit={{ y: 25, opacity: 0 }}
       >
-        <Subtitle>Feature</Subtitle>
+        <Subtitle>Highlights</Subtitle>
         <ul className="list-inside list-disc pl-4">
           <li>
             Developed an emulator with CLI for customized reliable transmission

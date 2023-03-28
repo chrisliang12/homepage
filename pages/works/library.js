@@ -114,7 +114,7 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <Subtitle>Highlights</Subtitle>
-        <ul className="list-outside ml-8 list-disc ">
+        <ul className="list-inside pl-4 list-disc ">
           <li>
             Built a multi-page online library service with React and TypeScript,
             providing a responsive and user-friendly front-end.

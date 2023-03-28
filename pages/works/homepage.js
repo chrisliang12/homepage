@@ -83,7 +83,8 @@ const ProjVisualizer = () => {
         <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
         </h3>
-        React, Next.js, Tailwind CSS, daisyUI, Three.js, Framer Motion, Blender
+        React, Next.js, Vercel, Tailwind CSS, daisyUI, Three.js, Framer Motion,
+        Blender
         <br />
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Link
@@ -110,9 +111,10 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <Subtitle>Highlights</Subtitle>
-        <ul className="list-outside ml-8 list-disc ">
+        <ul className="list-inside pl-4 list-disc ">
           <li>
-            Built a fully responsive multi-page website using React and Next.js.
+            Built a fully responsive multi-page website using React and Next.js
+            and deployed with Vercel.
           </li>
           <li>
             Created a visually appealing UI and light/dark mode using Tailwind

@@ -116,7 +116,7 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <Subtitle>Highlights</Subtitle>
-        <ul className="list-outside ml-8 list-disc ">
+        <ul className="list-inside pl-4 list-disc ">
           <li>Developed a high-performance router using C language. </li>
           <li>
             Implemented a subset of Ethernet, IP, ARP, and ICMP protocols to

@@ -117,8 +117,8 @@ const ProjVisualizer = () => {
         }}
         exit={{ y: 25, opacity: 0 }}
       >
-        <Subtitle>Highlight</Subtitle>
-        <ul className="list-inside list-disc indent-4">
+        <Subtitle>Highlights</Subtitle>
+        <ul className="list-inside list-disc pl-4">
           <li>
             Developed a pathfinding visualization app with React and Bootstrap.
           </li>
