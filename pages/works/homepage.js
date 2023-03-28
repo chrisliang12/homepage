@@ -1,4 +1,3 @@
-import Title from "@/components/title";
 import Link from "next/link";
 import Subtitle from "@/components/subtitle";
 import Image from "next/image";
@@ -113,24 +112,19 @@ const ProjVisualizer = () => {
         <Subtitle>Highlights</Subtitle>
         <ul className="list-outside ml-8 list-disc ">
           <li>
-            Built a fully responsive multipage website with React and Next.js.
+            Built a fully responsive multi-page website using React and Next.js.
           </li>
           <li>
-            Created beautiful UI and light/dark mode with Tailwind CSS and
-            daisyUI.
+            Created a visually appealing UI and light/dark mode using Tailwind
+            CSS and daisyUI.
           </li>
           <li>Designed and modeled the personal 3D rig model with Blender.</li>
           <li>
-            Achieved a soft lightening and shadow effect through Blender texture
+            Achieved a soft lighting and shadow effect by using Blender texture
             baking.
           </li>
-          <li>
-            Loaded the 3D model and created camera motion effect with Three.js.
-          </li>
-          <li>
-            Developed a smooth transition effect between the transition of pages
-            with Framer Motion
-          </li>
+          <li>Implemented camera motion effect with Three.js</li>
+          <li>Developed a smooth page transition effect using Framer Motion</li>
         </ul>
       </motion.div>
       <motion.div
@@ -150,7 +144,14 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <Subtitle>Demo</Subtitle>
-        <div className="w-full aspect-video relative">Wait to edit</div>
+        <div className="w-full aspect-video relative my-4">
+          <Image
+            src="/homepage/homepage.png"
+            fill
+            alt="pathfinding app demo"
+            className="rounded-2xl"
+          />
+        </div>
       </motion.div>
     </div>
   );

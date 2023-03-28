@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="sticky top-[100vh] pb-1">
+    <div className="sticky top-[100vh] pb-1 mt-16">
       <p className="text-center opacity-20 font-light tracking-wider">
         &copy; {new Date().getFullYear()} Yong Liang | Powered by{" "}
         <Link href="https://reactjs.org/" className="hover:text-sky-300">

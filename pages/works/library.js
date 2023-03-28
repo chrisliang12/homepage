@@ -1,4 +1,3 @@
-import Title from "@/components/title";
 import Link from "next/link";
 import Subtitle from "@/components/subtitle";
 import Image from "next/image";
@@ -79,20 +78,23 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <p className="text-justify indent-4">
-          An full stack online library service implemented with React and Spring
-          Boot that allows users to browse / review / borrow / return books.{" "}
+          An full-stack online library service implemented with React and Spring
+          Boot, allowing users to search, borrow, return, and review books.
         </p>
         <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
         </h3>
-        TypeScript, React, Bootstrap, Spring Boot, MySQL, OktaSDK
+        TypeScript, React, Bootstrap, Spring, Spring Boot, MySQL, OktaSDK
         <br />
-        <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Link
-        </h3>
-        <Link href="https://www.yoliang.xyz/" className="hover:text-sky-300">
-          yoliang.xyz
-        </Link>
+        {/* <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2"> */}
+        {/*   Link */}
+        {/* </h3> */}
+        {/* <Link */}
+        {/*   href="https://github.com/chrisliang12/lib-app" */}
+        {/*   className="hover:text-sky-300" */}
+        {/* > */}
+        {/*   https://github.com/chrisliang12/lib-app */}
+        {/* </Link> */}
       </motion.div>
 
       <motion.div
@@ -114,16 +116,21 @@ const ProjVisualizer = () => {
         <Subtitle>Highlights</Subtitle>
         <ul className="list-outside ml-8 list-disc ">
           <li>
-            Built a fully responsive front-end website using TypeScript with
-            React and Bootstrap.
+            Built a multi-page online library service with React and TypeScript,
+            providing a responsive and user-friendly front-end.
           </li>
           <li>
-            Developed a Spring Boot back-end backend with REST APIs and MySQL
-            database.
+            Developed the backend with Spring, Spring Boot, and MySQL, creating
+            robust and scalable server-side functionality.
           </li>
           <li>
-            Implemented user authentication and authorization (OAuth 2 & OIDC)
-            with OktaSDK.
+            Implemented user authentication and authorization using OAuth 2 and
+            OIDC with the Okta SDK to enhance security.
+          </li>
+          <li>
+            Enabled users to browse, search, borrow, return, and review books
+            within the application, providing a comprehensive online library
+            service.
           </li>
         </ul>
       </motion.div>
@@ -144,7 +151,29 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <Subtitle>Demo</Subtitle>
-        <div className="w-full aspect-video relative">Wait to edit</div>
+        <div className="w-full aspect-video relative my-4">
+          <Image
+            src="/lib/lib-demo1.gif"
+            fill
+            alt="pathfinding app demo"
+            className="rounded-2xl"
+          />
+        </div>
+        <div className="w-full aspect-video relative my-4">
+          <Image
+            src="/lib/lib-demo2.gif"
+            fill
+            alt="pathfinding app demo"
+            className="rounded-2xl"
+          />
+        </div>
+        <iframe
+          src="https://www.youtube.com/embed/u-dPpQ3lWlE"
+          title="YouTube Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="w-full aspect-video rounded-2xl"
+        ></iframe>
       </motion.div>
     </div>
   );

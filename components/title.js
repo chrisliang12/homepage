@@ -19,7 +19,7 @@ const Title = ({ children, delay }) => {
       exit={{ y: 25, opacity: 0 }}
       className="rounded-lg bg-primary inline-block px-2 py-1 mt-4 title"
     >
-      <h1 className="text-2xl">{children}</h1>
+      <h1 className="text-xl">{children}</h1>
     </motion.div>
   );
 };

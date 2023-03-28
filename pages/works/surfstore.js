@@ -1,7 +1,5 @@
-import Title from "@/components/title";
 import Link from "next/link";
 import Subtitle from "@/components/subtitle";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const ProjVisualizer = () => {
@@ -79,15 +77,14 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <p className="text-justify indent-4">
-          Surfstore is a scalable distributed key-value store that allows users
-          to store and synchronize their files in the cloud. The key-value store
-          consists of Meta Stores, which store file metadata, and Block Stores,
-          which store the actual block data of the file. The RAFT Consensus
-          Algorithm is implemented with the Meta Store to make the service
-          fault-tolerant. For the Block Stores, a technique called Consistent
-          Hashing is adopted to efficiently scale the service. A binary search
-          algorithm is used in the Consistent Hashing Ring to accelerate the
-          server lookup.{" "}
+          Surfstore is a distributed key-value store that allows users to store
+          and synchronize their files in the cloud. The key-value store consists
+          of Meta Stores, which store file metadata, and Block Stores, which
+          store the actual block data of the file. The RAFT Consensus Algorithm
+          is implemented with the Meta Store to make the service fault-tolerant.
+          For the Block Stores, a technique called Consistent Hashing is adopted
+          to efficiently scale the service. A binary search algorithm is used in
+          the Consistent Hashing Ring to accelerate the server lookup.{" "}
         </p>
         <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
@@ -98,11 +95,16 @@ const ProjVisualizer = () => {
           Link
         </h3>
         <Link
-          href="https://github.com/chrisliang12/OS-Project"
+          href="https://github.com/ucsd-cse224-wi23/proj5-chrisliang12"
           className="hover:text-sky-300"
         >
-          https://github.com/chrisliang12/OS-Project
+          https://github.com/ucsd-cse224-wi23/proj5-chrisliang12{" "}
         </Link>
+        <br />
+        <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
+          Associated with
+        </h3>
+        <p className="inline-block">CSE 224 - Networked Systems</p>
       </motion.div>
 
       <motion.div
@@ -127,14 +129,15 @@ const ProjVisualizer = () => {
           <li>Maintained a local index file implemented with SQLite.</li>
           <li>Scaled the cloud storage with Consistent Hashing.</li>
           <li>
-            Implemented binary search in Consistent Hashing for fast server
+            Implemented binary search in Consistent Hashing Ring for fast server
             lookup.
           </li>
           <li>
             Increased fault-tolerance with a subset of RAFT Consensus Algorithm.
           </li>
           <li>
-            Developed onflict resolution and persistence using file versioning
+            Developed conflict resolution and persistence using object
+            versioning
           </li>
         </ul>
       </motion.div>
@@ -155,7 +158,13 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <Subtitle>Demo</Subtitle>
-        <div className="w-full aspect-video relative">Wait to edit</div>
+        <iframe
+          src="https://www.youtube.com/embed/XN9wwwKW0zI"
+          title="YouTube Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="w-full aspect-video rounded-2xl"
+        ></iframe>
       </motion.div>
     </div>
   );

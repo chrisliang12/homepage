@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import Image from "next/image";
 import ProjectItem from "@/components/project_item";
 import Title from "@/components/title";
 
@@ -21,16 +19,14 @@ export default function Project() {
           <div className="card-actions justify-end">
             <div className="badge badge-secondary">Go</div>
             <div className="badge badge-secondary">gRPC</div>
-            <div className="badge badge-secondary">Protobuf</div>
-            <div className="badge badge-secondary">SQL</div>
-            <div className="badge badge-secondary">RAFT</div>
-            <div className="badge badge-secondary">Consistent Hashing</div>
+            <div className="badge badge-secondary">SQLite</div>
+            <div className="badge badge-secondary">...</div>
           </div>
         </ProjectItem>
 
         <ProjectItem
           link="/works/homepage"
-          imgSrc="/../public/pathfinding/page.png"
+          imgSrc="/homepage/homepage.png"
           delay={0.2}
         >
           <h2 className="card-title">Homepage</h2>
@@ -40,27 +36,23 @@ export default function Project() {
           </p>
           <div className="card-actions justify-end">
             <div className="badge badge-secondary">React</div>
-            <div className="badge badge-secondary">Next</div>
-            <div className="badge badge-secondary">Tailwind</div>
-            <div className="badge badge-secondary">daisyUI</div>
-            <div className="badge badge-secondary">ThreeJS</div>
-            <div className="badge badge-secondary">Framer</div>
+            <div className="badge badge-secondary">Next.js</div>
+            <div className="badge badge-secondary">TailwindCSS</div>
+            <div className="badge badge-secondary">...</div>
           </div>
         </ProjectItem>
 
         <ProjectItem link="/works/library" imgSrc="/lib/lib2.png" delay={0.3}>
           <h2 className="card-title">Online Library Service</h2>
           <p>
-            An full stack online library service which allows users to browse /
-            borrow / return books.
+            An online library service that allows users to borrow, return,
+            review books.
           </p>
           <div className="card-actions justify-end">
             <div className="badge badge-secondary">React</div>
-            <div className="badge badge-secondary">Bootstrap</div>
-            <div className="badge badge-secondary">SpringBoot</div>
+            <div className="badge badge-secondary">Spring</div>
             <div className="badge badge-secondary">MySQL</div>
-            <div className="badge badge-secondary">OktaSDK</div>
-            <div className="badge badge-secondary">Stripe</div>
+            <div className="badge badge-secondary">...</div>
           </div>
         </ProjectItem>
 
@@ -86,8 +78,10 @@ export default function Project() {
           imgSrc="/SWP/swp.png"
           delay={0.3}
         >
-          <h2 className="card-title">Reliable Transmission Emulator</h2>
-          <p>Implementation of a customized Sliding Window Protocol. </p>
+          <h2 className="card-title">Reliable Transmission</h2>
+          <p>
+            A customized reliable transmission protocol based on Sliding Window.{" "}
+          </p>
           <div className="card-actions justify-end">
             <div className="badge badge-secondary">C</div>
           </div>
@@ -99,7 +93,7 @@ export default function Project() {
           delay={0.4}
         >
           <h2 className="card-title">Nachos</h2>
-          <p>Re-implementation of the Nachos OS Project</p>
+          <p>Nachos Operating System Project</p>
           <div className="card-actions justify-end">
             <div className="badge badge-secondary">C</div>
             <div className="badge badge-secondary">Java</div>
@@ -112,7 +106,10 @@ export default function Project() {
           delay={0.4}
         >
           <h2 className="card-title">Pathfinding Visualizer</h2>
-          <p>An app built with React to visualize pathfinding algorithms</p>
+          <p>
+            An app built with React and Bootstrap to visualize pathfinding
+            algorithms
+          </p>
           <div className="card-actions justify-end">
             <div className="badge badge-secondary">React</div>
             <div className="badge badge-secondary">Bootstrap</div>
@@ -120,21 +117,21 @@ export default function Project() {
           </div>
         </ProjectItem>
 
-        <ProjectItem
-          link="/works/rl"
-          imgSrc="/mountain-car/mcar.png"
-          delay={0.5}
-        >
-          <h2 className="card-title">Mountain Car Challenge</h2>
-          <p>Solution to the OpenAI mountain car (continuous) challenge</p>
-          <div className="card-actions justify-end">
-            <div className="badge badge-secondary">Python</div>
-            <div className="badge badge-secondary">PyTorch</div>
-            <div className="badge badge-secondary">Sarsa</div>
-            <div className="badge badge-secondary">Q-learning</div>
-            <div className="badge badge-secondary">Deep Learning</div>
-          </div>
-        </ProjectItem>
+        {/* <ProjectItem */}
+        {/*   link="/works/rl" */}
+        {/*   imgSrc="/mountain-car/mcar.png" */}
+        {/*   delay={0.5} */}
+        {/* > */}
+        {/*   <h2 className="card-title">Mountain Car Challenge</h2> */}
+        {/*   <p>Solution to the OpenAI mountain car (continuous) challenge</p> */}
+        {/*   <div className="card-actions justify-end"> */}
+        {/*     <div className="badge badge-secondary">Python</div> */}
+        {/*     <div className="badge badge-secondary">PyTorch</div> */}
+        {/*     <div className="badge badge-secondary">Sarsa</div> */}
+        {/*     <div className="badge badge-secondary">Q-learning</div> */}
+        {/*     <div className="badge badge-secondary">Deep Learning</div> */}
+        {/*   </div> */}
+        {/* </ProjectItem> */}
 
         <ProjectItem
           link="/works/youbot"
@@ -142,14 +139,12 @@ export default function Project() {
           delay={0.5}
         >
           <h2 className="card-title">youBot Controller</h2>
-          <p>
-            A software controlling a mobile manipulator in the Coppelia
-            environment
-          </p>
+          <p>A software controlling a mobile manipulator</p>
           <div className="card-actions justify-end">
             <div className="badge badge-secondary">Matlab</div>
-            <div className="badge badge-secondary">Robot Kinematics</div>
+            {/* <div className="badge badge-secondary">Robot Kinematics</div> */}
             <div className="badge badge-secondary">CoppeliaSim</div>
+            <div className="badge badge-secondary">...</div>
           </div>
         </ProjectItem>
       </div>

@@ -1,4 +1,3 @@
-import Title from "@/components/title";
 import Link from "next/link";
 import Subtitle from "@/components/subtitle";
 import Image from "next/image";
@@ -79,11 +78,12 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <p className="text-justify indent-4">
-          An app to visualize the searching pattern of different pathfinding
-          algorithms. The algorithms can be visualized including BFS, DFS, Best
-          First, Dijkstra, and A*. This app also provide basic maze
-          customization feature which can let user create their own maze and run
-          algorithms within it.{" "}
+          Developed a web app using React and Bootstrap to visualize the search
+          patterns of various pathfinding algorithms, including BFS, DFS, Best
+          First, Dijkstra, and A*. The app allows users to customize mazes and
+          adjust the visualization speed, and it supports two types of
+          heuristics. Notable features include an intuitive control panel and a
+          sleek design.
         </p>
         <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Stack
@@ -94,10 +94,10 @@ const ProjVisualizer = () => {
           Link
         </h3>
         <Link
-          href="https://github.com/chrisliang12"
+          href="https://chrisliang12.github.io/pathfinding-visualizer-react/"
           className="hover:text-sky-300"
         >
-          https://github.com/chrisliang12
+          https://chrisliang12.github.io/pathfinding-visualizer-react/
         </Link>
       </motion.div>
 
@@ -119,11 +119,21 @@ const ProjVisualizer = () => {
       >
         <Subtitle>Highlight</Subtitle>
         <ul className="list-inside list-disc indent-4">
-          <li>Built with React and Bootstrap</li>
-          <li>Easy to use and well designed control panel</li>
-          <li>Speed and maze size control</li>
-          <li>Maze customization</li>
-          <li>Implemented with two types of heuristics</li>
+          <li>
+            Developed a pathfinding visualization app with React and Bootstrap.
+          </li>
+          <li>
+            Implemented visualization for several algorithms, including BFS,
+            DFS, Best First, Dijkstra, and A* with multiple heuristics options.
+          </li>
+          <li>
+            Added maze customization features to let users create and solve
+            their own mazes.
+          </li>
+          <li>
+            Included easy-to-use control panel with speed and maze size control
+            options.
+          </li>
         </ul>
       </motion.div>
       <motion.div

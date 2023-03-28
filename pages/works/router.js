@@ -1,7 +1,5 @@
-import Title from "@/components/title";
 import Link from "next/link";
 import Subtitle from "@/components/subtitle";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const ProjVisualizer = () => {
@@ -89,12 +87,16 @@ const ProjVisualizer = () => {
         </h3>
         C, Mininet, VirtualBox
         <br />
+        {/* <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2"> */}
+        {/*   Link */}
+        {/* </h3> */}
+        {/* <Link href="https://www.yoliang.xyz/" className="hover:text-sky-300"> */}
+        {/*   yoliang.xyz */}
+        {/* </Link> */}
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Link
+          Associated with
         </h3>
-        <Link href="https://www.yoliang.xyz/" className="hover:text-sky-300">
-          yoliang.xyz
-        </Link>
+        <p className="inline-block">CSE 123 - Computer Networks</p>
       </motion.div>
 
       <motion.div
@@ -115,18 +117,17 @@ const ProjVisualizer = () => {
       >
         <Subtitle>Highlights</Subtitle>
         <ul className="list-outside ml-8 list-disc ">
+          <li>Developed a high-performance router using C language. </li>
           <li>
-            Developed the router with C to achieve a blast fast performance.
+            Implemented a subset of Ethernet, IP, ARP, and ICMP protocols to
+            handle relevant packets.
           </li>
+          <li>Developed an ARP cache to improve routing efficiency.</li>
+          <li>Implemented packet forwarding using Longest Prefix Match.</li>
           <li>
-            Applied a subset of Ethernet, IP, ARP, ICMP protocols to handle the
-            corresponding packets.
-          </li>
-          <li>Developed an ARP cache to increase the routing efficiency.</li>
-          <li>Handled the packet forwarding with Longest Prefix Match.</li>
-          <li>
-            Tested with various network topologies, including ping, traceroute,
-            HTTP downloads, etc.
+            Tested the router with a variety of network topologies and conducted
+            functional testing using commands such as ping, traceroute, and
+            wget.
           </li>
         </ul>
       </motion.div>
@@ -147,7 +148,13 @@ const ProjVisualizer = () => {
         exit={{ y: 25, opacity: 0 }}
       >
         <Subtitle>Demo</Subtitle>
-        <div className="w-full aspect-video relative">Wait to edit</div>
+        <iframe
+          src="https://www.youtube.com/embed/S7O2JZuRZEY"
+          title="YouTube Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="w-full aspect-video rounded-2xl"
+        />
       </motion.div>
     </div>
   );

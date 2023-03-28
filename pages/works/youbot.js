@@ -87,20 +87,20 @@ const ProjVisualizer = () => {
         </h3>
         Matlab, CoppeliaSim, Feedforward + Feedback Control, Robot Kinematics
         <br />
-        <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Link
-        </h3>
-        <Link
-          href="https://github.com/chrisliang12"
-          className="hover:text-sky-300"
-        >
-          https://github.com/chrisliang12
-        </Link>
-        <br />
+        {/* <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2"> */}
+        {/*   Link */}
+        {/* </h3> */}
+        {/* <Link */}
+        {/*   href="https://github.com/chrisliang12" */}
+        {/*   className="hover:text-sky-300" */}
+        {/* > */}
+        {/*   https://github.com/chrisliang12 */}
+        {/* </Link> */}
+        {/* <br /> */}
         <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
           Associated with
         </h3>
-        <p className="inline-block">MAE 204 - Robotics (A+)</p>{" "}
+        <p className="inline-block">MAE 204 - Robotics</p>
       </motion.div>
 
       <motion.div
