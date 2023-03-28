@@ -95,7 +95,7 @@ export default function Home() {
           >
             YouTube channel
           </Link>
-          , and I would be thrilled if you took the time to check them out!
+          , and I would be thrilled if you would like to check them out!
         </p>
       </motion.div>
 
