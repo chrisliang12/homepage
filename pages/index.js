@@ -128,7 +128,7 @@ export default function Home() {
         </p>
         <p className="text-base my-4">
           <Link
-            href="https://github.com/chrisliang12"
+            href="https://www.youtube.com/channel/UC12KqSODuNK6OERQ8RkZCBw"
             className="p-2 rounded-md hover:bg-opacity-20 hover:text-secondary hover:bg-info hover:underline hover:underline-offset-4"
           >
             <BsYoutube className="inline-block mr-2" />
