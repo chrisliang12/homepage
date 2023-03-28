@@ -93,24 +93,26 @@ const Transmission = () => {
             className="mx-auto rounded-2xl"
           />
         </div>
-        <h3 className="ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Stack
-        </h3>
-        C, Multi-threading
-        <br />
-        {/* <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2"> */}
-        {/*   Link */}
-        {/* </h3> */}
-        {/* <Link */}
-        {/*   href="https://github.com/chrisliang12" */}
-        {/*   className="hover:text-sky-300" */}
-        {/* > */}
-        {/*   https://github.com/chrisliang12 */}
-        {/* </Link> */}
-        <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Associated with
-        </h3>
-        CSE 123 - Computer Networks
+        <div className="pl-4">
+          <h3 className="inline-block bg-secondary rounded-sm px-2 mr-2">
+            Stack
+          </h3>
+          C, Multi-threading
+          <br />
+          {/* <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2"> */}
+          {/*   Link */}
+          {/* </h3> */}
+          {/* <Link */}
+          {/*   href="https://github.com/chrisliang12" */}
+          {/*   className="hover:text-sky-300" */}
+          {/* > */}
+          {/*   https://github.com/chrisliang12 */}
+          {/* </Link> */}
+          <h3 className="mt-2 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Associated with
+          </h3>
+          CSE 123 - Computer Networks
+        </div>
       </motion.div>
 
       <motion.div

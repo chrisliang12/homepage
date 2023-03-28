@@ -82,25 +82,27 @@ const youBotController = () => {
           a feedforward + feedback controller. Tested the program via 3D
           simulation in CoppeliaSim.
         </p>
-        <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Stack
-        </h3>
-        Matlab, CoppeliaSim, Feedforward + Feedback Control, Robot Kinematics
-        <br />
-        {/* <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2"> */}
-        {/*   Link */}
-        {/* </h3> */}
-        {/* <Link */}
-        {/*   href="https://github.com/chrisliang12" */}
-        {/*   className="hover:text-sky-300" */}
-        {/* > */}
-        {/*   https://github.com/chrisliang12 */}
-        {/* </Link> */}
-        {/* <br /> */}
-        <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Associated with
-        </h3>
-        MAE 204 - Robotics
+        <div className="pl-4">
+          <h3 className="mt-4 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Stack
+          </h3>
+          Matlab, CoppeliaSim, Feedforward + Feedback Control, Robot Kinematics
+          <br />
+          {/* <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2"> */}
+          {/*   Link */}
+          {/* </h3> */}
+          {/* <Link */}
+          {/*   href="https://github.com/chrisliang12" */}
+          {/*   className="hover:text-sky-300" */}
+          {/* > */}
+          {/*   https://github.com/chrisliang12 */}
+          {/* </Link> */}
+          {/* <br /> */}
+          <h3 className="mt-2 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Associated with
+          </h3>
+          MAE 204 - Robotics
+        </div>
       </motion.div>
 
       <motion.div

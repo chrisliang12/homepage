@@ -86,25 +86,28 @@ const Surfstore = () => {
           to efficiently scale the service. A binary search algorithm is used in
           the Consistent Hashing Ring to accelerate the server lookup.{" "}
         </p>
-        <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Stack
-        </h3>
-        Go, gRPC, Protobuf, SQLite, RAFT Consensus Algorithm, Consistent Hashing
-        <br />
-        <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Link
-        </h3>
-        <Link
-          href="https://github.com/ucsd-cse224-wi23/proj5-chrisliang12"
-          className="hover:text-sky-300"
-        >
-          https://github.com/ucsd-cse224-wi23/proj5-chrisliang12{" "}
-        </Link>
-        <br />
-        <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Associated with
-        </h3>
-        CSE 224 - Networked Systems
+        <div className="pl-4">
+          <h3 className="mt-4 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Stack
+          </h3>
+          Go, gRPC, Protobuf, SQLite, RAFT Consensus Algorithm, Consistent
+          Hashing
+          <br />
+          <h3 className="mt-2 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Link
+          </h3>
+          <Link
+            href="https://github.com/ucsd-cse224-wi23/proj5-chrisliang12"
+            className="hover:text-sky-300"
+          >
+            https://github.com/ucsd-cse224-wi23/proj5-chrisliang12{" "}
+          </Link>
+          <br />
+          <h3 className="mt-2 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Associated with
+          </h3>
+          CSE 224 - Networked Systems
+        </div>
       </motion.div>
 
       <motion.div

@@ -82,21 +82,23 @@ const SimpleRouter = () => {
           TCP/UDP segments, etc. Some networking protocols are also implemented,
           such as Ethernet, ARP, IP and ICMP.{" "}
         </p>
-        <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Stack
-        </h3>
-        C, Mininet, VirtualBox
-        <br />
-        {/* <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2"> */}
-        {/*   Link */}
-        {/* </h3> */}
-        {/* <Link href="https://www.yoliang.xyz/" className="hover:text-sky-300"> */}
-        {/*   yoliang.xyz */}
-        {/* </Link> */}
-        <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Associated with
-        </h3>
-        CSE 123 - Computer Networks
+        <div className="pl-4">
+          <h3 className="mt-4 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Stack
+          </h3>
+          C, Mininet, VirtualBox
+          <br />
+          {/* <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2"> */}
+          {/*   Link */}
+          {/* </h3> */}
+          {/* <Link href="https://www.yoliang.xyz/" className="hover:text-sky-300"> */}
+          {/*   yoliang.xyz */}
+          {/* </Link> */}
+          <h3 className="mt-2 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Associated with
+          </h3>
+          CSE 123 - Computer Networks
+        </div>
       </motion.div>
 
       <motion.div

@@ -80,18 +80,20 @@ const HomePage = () => {
         <p className="text-justify indent-4">
           My personal homepage and portfolio built with modern frameworks.{" "}
         </p>
-        <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Stack
-        </h3>
-        React, Next.js, Vercel, Tailwind CSS, daisyUI, Three.js, Framer Motion,
-        Blender
-        <br />
-        <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Link
-        </h3>
-        <Link href="https://www.yoliang.xyz/" className="hover:text-sky-300">
-          yoliang.xyz
-        </Link>
+        <div className="pl-4">
+          <h3 className="mt-4 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Stack
+          </h3>
+          React, Next.js, Vercel, Tailwind CSS, daisyUI, Three.js, Framer
+          Motion, Blender
+          <br />
+          <h3 className="mt-2 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Link
+          </h3>
+          <Link href="https://www.yoliang.xyz/" className="hover:text-sky-300">
+            yoliang.xyz
+          </Link>
+        </div>
       </motion.div>
 
       <motion.div

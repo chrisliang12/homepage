@@ -85,20 +85,22 @@ const Visualizer = () => {
           heuristics. Notable features include an intuitive control panel and a
           sleek design.
         </p>
-        <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Stack
-        </h3>
-        React, Bootstrap, JavaScript, HTML, CSS
-        <br />
-        <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Link
-        </h3>
-        <Link
-          href="https://chrisliang12.github.io/pathfinding-visualizer-react/"
-          className="hover:text-sky-300"
-        >
-          https://chrisliang12.github.io/pathfinding-visualizer-react/
-        </Link>
+        <div className="pl-4">
+          <h3 className="mt-4 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Stack
+          </h3>
+          React, Bootstrap, JavaScript, HTML, CSS
+          <br />
+          <h3 className="mt-2 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Link
+          </h3>
+          <Link
+            href="https://chrisliang12.github.io/pathfinding-visualizer-react/"
+            className="hover:text-sky-300"
+          >
+            https://chrisliang12.github.io/pathfinding-visualizer-react/
+          </Link>
+        </div>
       </motion.div>
 
       <motion.div

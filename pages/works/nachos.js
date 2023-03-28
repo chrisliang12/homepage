@@ -82,25 +82,27 @@ const Nachos = () => {
           Developed a memory management system with demand paging and page
           swapping. Capable of running user-level MIPS programs.
         </p>
-        <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Stack
-        </h3>
-        Java, C
-        <br />
-        <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Link
-        </h3>
-        <Link
-          href="https://github.com/chrisliang12/OS-Project"
-          className="hover:text-sky-300"
-        >
-          https://github.com/chrisliang12/OS-Project
-        </Link>
-        <br />
-        <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Associated with
-        </h3>
-        CSE 120 - Operating Systems
+        <div className="pl-4">
+          <h3 className="mt-4 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Stack
+          </h3>
+          Java, C
+          <br />
+          <h3 className="mt-2 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Link
+          </h3>
+          <Link
+            href="https://github.com/chrisliang12/OS-Project"
+            className="hover:text-sky-300"
+          >
+            https://github.com/chrisliang12/OS-Project
+          </Link>
+          <br />
+          <h3 className="mt-2 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Associated with
+          </h3>
+          CSE 120 - Operating Systems
+        </div>
       </motion.div>
 
       <motion.div

@@ -81,20 +81,22 @@ const Library = () => {
           An full-stack online library service implemented with React and Spring
           Boot, allowing users to search, borrow, return, and review books.
         </p>
-        <h3 className="mt-4 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2">
-          Stack
-        </h3>
-        TypeScript, React, Bootstrap, Spring, Spring Boot, MySQL, OktaSDK
-        <br />
-        {/* <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2"> */}
-        {/*   Link */}
-        {/* </h3> */}
-        {/* <Link */}
-        {/*   href="https://github.com/chrisliang12/lib-app" */}
-        {/*   className="hover:text-sky-300" */}
-        {/* > */}
-        {/*   https://github.com/chrisliang12/lib-app */}
-        {/* </Link> */}
+        <div className="pl-4">
+          <h3 className="mt-4 inline-block bg-secondary rounded-sm px-2 mr-2">
+            Stack
+          </h3>
+          TypeScript, React, Bootstrap, Spring, Spring Boot, MySQL, OktaSDK
+          <br />
+          {/* <h3 className="mt-2 ml-4 inline-block bg-secondary rounded-sm px-2 mr-2"> */}
+          {/*   Link */}
+          {/* </h3> */}
+          {/* <Link */}
+          {/*   href="https://github.com/chrisliang12/lib-app" */}
+          {/*   className="hover:text-sky-300" */}
+          {/* > */}
+          {/*   https://github.com/chrisliang12/lib-app */}
+          {/* </Link> */}
+        </div>
       </motion.div>
 
       <motion.div
